@@ -334,7 +334,7 @@ class WOD5eDice {
         : {}
 
       // Roll dialog template
-      const dialogTemplate = `systems/wod5e/display/ui/${system}-roll-dialog.hbs`
+      const dialogTemplate = `systems/wod5e-ctd/display/ui/${system}-roll-dialog.hbs`
       // Data that the dialog template needs
       const dialogData = {
         system,

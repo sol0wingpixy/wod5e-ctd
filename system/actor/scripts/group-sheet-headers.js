@@ -38,7 +38,7 @@ export async function manageSheetHeaders() {
   }))
 
   const content = await foundry.applications.handlebars.renderTemplate(
-    'systems/wod5e/display/shared/actors/parts/group/manage-sheet-headers.hbs',
+    'systems/wod5e-ctd/display/shared/actors/parts/group/manage-sheet-headers.hbs',
     {
       headers
     }

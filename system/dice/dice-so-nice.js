@@ -14,16 +14,16 @@ export const loadDiceSoNice = async function (dice3d) {
     {
       type: 'dm',
       labels: [
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-crit-dsn.png'
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-crit-dsn.png'
       ],
       bumpMaps: [
         '',
@@ -31,11 +31,11 @@ export const loadDiceSoNice = async function (dice3d) {
         '',
         '',
         '',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/normal-crit-dsn-bump.png'
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-crit-dsn-bump.png'
       ],
       colorset: 'black',
       system: 'wod5e'
@@ -47,16 +47,16 @@ export const loadDiceSoNice = async function (dice3d) {
     {
       type: 'dv',
       labels: [
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-crit-dsn.png'
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-crit-dsn.png'
       ],
       bumpMaps: [
         '',
@@ -64,11 +64,11 @@ export const loadDiceSoNice = async function (dice3d) {
         '',
         '',
         '',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/normal-crit-dsn-bump.png'
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-crit-dsn-bump.png'
       ],
       colorset: 'black',
       system: 'wod5e'
@@ -101,28 +101,28 @@ export const loadDiceSoNice = async function (dice3d) {
     {
       type: 'dg',
       labels: [
-        'systems/wod5e/assets/icons/dsn/bestial-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-crit-dsn.png'
+        'systems/wod5e-ctd/assets/icons/dsn/bestial-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-crit-dsn.png'
       ],
       bumpMaps: [
-        'systems/wod5e/assets/icons/dsn/bestial-fail-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/bestial-fail-dsn-bump.png',
         '',
         '',
         '',
         '',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/red-crit-dsn-bump.png'
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-crit-dsn-bump.png'
       ],
       colorset: 'hunger',
       system: 'wod5e'
@@ -134,16 +134,16 @@ export const loadDiceSoNice = async function (dice3d) {
     {
       type: 'dh',
       labels: [
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-crit-dsn.png'
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-crit-dsn.png'
       ],
       bumpMaps: [
         '',
@@ -151,11 +151,11 @@ export const loadDiceSoNice = async function (dice3d) {
         '',
         '',
         '',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-crit-dsn.png'
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-crit-dsn.png'
       ],
       colorset: 'hunterdice',
       system: 'wod5e'
@@ -211,28 +211,28 @@ export const loadDiceSoNice = async function (dice3d) {
     {
       type: 'ds',
       labels: [
-        'systems/wod5e/assets/icons/dsn/desperation-fail-dsnc.png',
-        'systems/wod5e/assets/icons/dsn/red-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsnc.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsnc.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsnc.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsnc.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-crit-dsnc.png'
+        'systems/wod5e-ctd/assets/icons/dsn/desperation-fail-dsnc.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsnc.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsnc.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsnc.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsnc.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-crit-dsnc.png'
       ],
       bumpMaps: [
-        'systems/wod5e/assets/icons/dsn/desperation-fail-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/desperation-fail-dsn-bump.png',
         '',
         '',
         '',
         '',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-crit-dsn.png'
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-crit-dsn.png'
       ],
       colorset: 'black',
       system: 'wod5e'
@@ -244,16 +244,16 @@ export const loadDiceSoNice = async function (dice3d) {
     {
       type: 'dw',
       labels: [
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-crit-dsn.png'
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-crit-dsn.png'
       ],
       bumpMaps: [
         '',
@@ -261,11 +261,11 @@ export const loadDiceSoNice = async function (dice3d) {
         '',
         '',
         '',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-crit-dsn-bump.png'
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-crit-dsn-bump.png'
       ],
       colorset: 'werewolf',
       system: 'wod5e'
@@ -277,28 +277,28 @@ export const loadDiceSoNice = async function (dice3d) {
     {
       type: 'dr',
       labels: [
-        'systems/wod5e/assets/icons/dsn/werewolf-brutal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-brutal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-crit-dsn.png'
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-brutal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-brutal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-crit-dsn.png'
       ],
       bumpMaps: [
-        'systems/wod5e/assets/icons/dsn/werewolf-brutal-fail-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-brutal-fail-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-brutal-fail-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-brutal-fail-dsn-bump.png',
         '',
         '',
         '',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-crit-dsn-bump.png'
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-crit-dsn-bump.png'
       ],
       colorset: 'rage',
       system: 'wod5e'
@@ -347,16 +347,16 @@ export const loadDiceSoNice = async function (dice3d) {
     {
       type: 'dv',
       labels: [
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-crit-dsn.png'
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-crit-dsn.png'
       ],
       bumpMaps: [
         '',
@@ -364,11 +364,11 @@ export const loadDiceSoNice = async function (dice3d) {
         '',
         '',
         '',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/normal-crit-dsn-bump.png'
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-crit-dsn-bump.png'
       ],
       system: 'vtm5x'
     },
@@ -379,28 +379,28 @@ export const loadDiceSoNice = async function (dice3d) {
     {
       type: 'dg',
       labels: [
-        'systems/wod5e/assets/icons/dsn/bestial-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-crit-dsn.png'
+        'systems/wod5e-ctd/assets/icons/dsn/bestial-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-crit-dsn.png'
       ],
       bumpMaps: [
-        'systems/wod5e/assets/icons/dsn/bestial-fail-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/bestial-fail-dsn-bump.png',
         '',
         '',
         '',
         '',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/red-crit-dsn-bump.png'
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-crit-dsn-bump.png'
       ],
       system: 'vtm5x'
     },
@@ -411,16 +411,16 @@ export const loadDiceSoNice = async function (dice3d) {
     {
       type: 'dh',
       labels: [
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-crit-dsn.png'
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-crit-dsn.png'
       ],
       bumpMaps: [
         '',
@@ -428,11 +428,11 @@ export const loadDiceSoNice = async function (dice3d) {
         '',
         '',
         '',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-crit-dsn.png'
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-crit-dsn.png'
       ],
       system: 'vtm5x'
     },
@@ -443,28 +443,28 @@ export const loadDiceSoNice = async function (dice3d) {
     {
       type: 'ds',
       labels: [
-        'systems/wod5e/assets/icons/dsn/desperation-fail-dsnc.png',
-        'systems/wod5e/assets/icons/dsn/red-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsnc.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsnc.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsnc.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsnc.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-crit-dsnc.png'
+        'systems/wod5e-ctd/assets/icons/dsn/desperation-fail-dsnc.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsnc.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsnc.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsnc.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsnc.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-crit-dsnc.png'
       ],
       bumpMaps: [
-        'systems/wod5e/assets/icons/dsn/desperation-fail-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/desperation-fail-dsn-bump.png',
         '',
         '',
         '',
         '',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-crit-dsn.png'
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-crit-dsn.png'
       ],
       system: 'vtm5x'
     },
@@ -475,16 +475,16 @@ export const loadDiceSoNice = async function (dice3d) {
     {
       type: 'dw',
       labels: [
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-crit-dsn.png'
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-crit-dsn.png'
       ],
       bumpMaps: [
         '',
@@ -492,11 +492,11 @@ export const loadDiceSoNice = async function (dice3d) {
         '',
         '',
         '',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-crit-dsn-bump.png'
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-crit-dsn-bump.png'
       ],
       system: 'vtm5x'
     },
@@ -507,28 +507,28 @@ export const loadDiceSoNice = async function (dice3d) {
     {
       type: 'dr',
       labels: [
-        'systems/wod5e/assets/icons/dsn/werewolf-brutal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-brutal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-crit-dsn.png'
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-brutal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-brutal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-crit-dsn.png'
       ],
       bumpMaps: [
-        'systems/wod5e/assets/icons/dsn/werewolf-brutal-fail-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-brutal-fail-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-brutal-fail-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-brutal-fail-dsn-bump.png',
         '',
         '',
         '',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/werewolf-crit-dsn-bump.png'
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/werewolf-crit-dsn-bump.png'
       ],
       system: 'vtm5x'
     },
@@ -546,16 +546,16 @@ export const loadDiceSoNice = async function (dice3d) {
     {
       type: 'dv',
       labels: [
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-crit-dsn.png'
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-crit-dsn.png'
       ],
       bumpMaps: [
         '',
@@ -563,11 +563,11 @@ export const loadDiceSoNice = async function (dice3d) {
         '',
         '',
         '',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/normal-crit-dsn-bump.png'
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-crit-dsn-bump.png'
       ],
       system: 'vtm5y'
     },
@@ -578,28 +578,28 @@ export const loadDiceSoNice = async function (dice3d) {
     {
       type: 'dg',
       labels: [
-        'systems/wod5e/assets/icons/dsn/bestial-fail-dsnc.png',
-        'systems/wod5e/assets/icons/dsn/red-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-success-dsnc.png',
-        'systems/wod5e/assets/icons/dsn/red-success-dsnc.png',
-        'systems/wod5e/assets/icons/dsn/red-success-dsnc.png',
-        'systems/wod5e/assets/icons/dsn/red-success-dsnc.png',
-        'systems/wod5e/assets/icons/dsn/red-crit-dsnc.png'
+        'systems/wod5e-ctd/assets/icons/dsn/bestial-fail-dsnc.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-success-dsnc.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-success-dsnc.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-success-dsnc.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-success-dsnc.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-crit-dsnc.png'
       ],
       bumpMaps: [
-        'systems/wod5e/assets/icons/dsn/bestial-fail-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/bestial-fail-dsn-bump.png',
         '',
         '',
         '',
         '',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/normal-success-dsn-bump.png',
-        'systems/wod5e/assets/icons/dsn/red-crit-dsn-bump.png'
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-success-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-crit-dsn-bump.png'
       ],
       system: 'vtm5y'
     },
@@ -610,16 +610,16 @@ export const loadDiceSoNice = async function (dice3d) {
     {
       type: 'dh',
       labels: [
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/normal-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-crit-dsn.png'
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/normal-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-crit-dsn.png'
       ],
       bumpMaps: [
         '',
@@ -627,11 +627,11 @@ export const loadDiceSoNice = async function (dice3d) {
         '',
         '',
         '',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-crit-dsn.png'
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-crit-dsn.png'
       ],
       system: 'vtm5y'
     },
@@ -642,28 +642,28 @@ export const loadDiceSoNice = async function (dice3d) {
     {
       type: 'ds',
       labels: [
-        'systems/wod5e/assets/icons/dsn/desperation-fail-dsnc.png',
-        'systems/wod5e/assets/icons/dsn/red-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/red-fail-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsnc.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsnc.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsnc.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsnc.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-crit-dsnc.png'
+        'systems/wod5e-ctd/assets/icons/dsn/desperation-fail-dsnc.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/red-fail-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsnc.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsnc.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsnc.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsnc.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-crit-dsnc.png'
       ],
       bumpMaps: [
-        'systems/wod5e/assets/icons/dsn/desperation-fail-dsn-bump.png',
+        'systems/wod5e-ctd/assets/icons/dsn/desperation-fail-dsn-bump.png',
         '',
         '',
         '',
         '',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-success-dsn.png',
-        'systems/wod5e/assets/icons/dsn/hunter-normal-crit-dsn.png'
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-success-dsn.png',
+        'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-crit-dsn.png'
       ],
       system: 'vtm5y'
     },

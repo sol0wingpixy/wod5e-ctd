@@ -6,7 +6,9 @@ import {
   HunterDie,
   HunterDesperationDie,
   WerewolfDie,
-  WerewolfRageDie
+    WerewolfRageDie,
+    ChangelingDie,
+ChangelingGlamourDie
 } from '../../dice/splat-dice.js'
 
 /**
@@ -44,7 +46,10 @@ export async function generateRollFormula({
   } else if (system === 'hunter') {
     // Construct the Hunter roll formula by merging Hunter Dice and Desperation Dice
     rollFormula = `${basicDice}d${HunterDie.DENOMINATION}${successFormula} + ${advancedDice}d${HunterDesperationDie.DENOMINATION}${successFormula}`
-  } else {
+  } else if (system === 'changeling') {
+      // Construct the Werewolf roll formula by merging Werewolf Dice and Rage Dice
+      rollFormula = `${basicDice}d${ChangelingDie.DENOMINATION}${successFormula} + ${advancedDice}d${ChangelingGlamourDie.DENOMINATION}${successFormula}`
+      } else {
     // Construct the Mortal roll formula; it doesn't need any secondary rolls
     rollFormula = `${basicDice}d${MortalDie.DENOMINATION}${successFormula}`
   }

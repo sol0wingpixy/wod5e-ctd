@@ -68,7 +68,7 @@ export class StorytellerMenu extends HandlebarsApplicationMixin(ApplicationV2) {
 
   static PARTS = {
     editor: {
-      template: 'systems/wod5e/display/ui/storyteller-menu.hbs',
+      template: 'systems/wod5e-ctd/display/ui/storyteller-menu.hbs',
       scrollable: ['.storyteller-panels']
     }
   }
@@ -166,7 +166,7 @@ export class StorytellerMenu extends HandlebarsApplicationMixin(ApplicationV2) {
     }
 
     const content = await foundry.applications.handlebars.renderTemplate(
-      'systems/wod5e/display/ui/select-dialog.hbs',
+      'systems/wod5e-ctd/display/ui/select-dialog.hbs',
       { options }
     )
 

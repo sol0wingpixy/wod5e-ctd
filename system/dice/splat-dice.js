@@ -215,26 +215,84 @@ export class WerewolfDie extends WOD5eDie {
  * @extends {Die}
  */
 export class WerewolfRageDie extends WOD5eDie {
-  static GAME_SYSTEM = 'werewolf'
+    static GAME_SYSTEM = 'werewolf'
 
-  static DIE_TYPE = 'advanced'
+    static DIE_TYPE = 'advanced'
 
-  /** @override */
-  static DENOMINATION = 'r'
+    /** @override */
+    static DENOMINATION = 'r'
 
-  /** @override */
-  static getResultLabel(result) {
-    return {
-      1: `<img src="${werewolfDiceLocation + rageDiceFaces.brutal}" />`,
-      2: `<img src="${werewolfDiceLocation + rageDiceFaces.brutal}" />`,
-      3: `<img src="${werewolfDiceLocation + rageDiceFaces.failure}" />`,
-      4: `<img src="${werewolfDiceLocation + rageDiceFaces.failure}" />`,
-      5: `<img src="${werewolfDiceLocation + rageDiceFaces.failure}" />`,
-      6: `<img src="${werewolfDiceLocation + rageDiceFaces.success}" />`,
-      7: `<img src="${werewolfDiceLocation + rageDiceFaces.success}" />`,
-      8: `<img src="${werewolfDiceLocation + rageDiceFaces.success}" />`,
-      9: `<img src="${werewolfDiceLocation + rageDiceFaces.success}" />`,
-      10: `<img src="${werewolfDiceLocation + rageDiceFaces.critical}" />`
-    }[result]
-  }
+    /** @override */
+    static getResultLabel(result) {
+        return {
+            1: `<img src="${werewolfDiceLocation + rageDiceFaces.brutal}" />`,
+            2: `<img src="${werewolfDiceLocation + rageDiceFaces.brutal}" />`,
+            3: `<img src="${werewolfDiceLocation + rageDiceFaces.failure}" />`,
+            4: `<img src="${werewolfDiceLocation + rageDiceFaces.failure}" />`,
+            5: `<img src="${werewolfDiceLocation + rageDiceFaces.failure}" />`,
+            6: `<img src="${werewolfDiceLocation + rageDiceFaces.success}" />`,
+            7: `<img src="${werewolfDiceLocation + rageDiceFaces.success}" />`,
+            8: `<img src="${werewolfDiceLocation + rageDiceFaces.success}" />`,
+            9: `<img src="${werewolfDiceLocation + rageDiceFaces.success}" />`,
+            10: `<img src="${werewolfDiceLocation + rageDiceFaces.critical}" />`
+        }[result]
+    }
 }
+/**
+ * Extend the basic Die for the Changeling (c) dice
+ * @extends {Die}
+ */
+export class ChangelingDie extends WOD5eDie {
+    static GAME_SYSTEM = 'changeling'
+
+    static DIE_TYPE = 'basic'
+
+    /** @override */
+    static DENOMINATION = 'c'
+
+    /** @override */
+    static getResultLabel(result) {
+        return {
+            1: `<img src="${vampireDiceLocation + normalDiceFaces.failure}" />`,
+            2: `<img src="${vampireDiceLocation + normalDiceFaces.failure}" />`,
+            3: `<img src="${vampireDiceLocation + normalDiceFaces.failure}" />`,
+            4: `<img src="${vampireDiceLocation + normalDiceFaces.failure}" />`,
+            5: `<img src="${vampireDiceLocation + normalDiceFaces.failure}" />`,
+            6: `<img src="${vampireDiceLocation + normalDiceFaces.success}" />`,
+            7: `<img src="${vampireDiceLocation + normalDiceFaces.success}" />`,
+            8: `<img src="${vampireDiceLocation + normalDiceFaces.success}" />`,
+            9: `<img src="${vampireDiceLocation + normalDiceFaces.success}" />`,
+            10: `<img src="${vampireDiceLocation + normalDiceFaces.critical}" />`
+        }[result]
+    }
+}
+
+/**
+ * Extend the basic Die for the Glamour {l} dice
+ * @extends {Die}
+ */
+export class ChangelingGlamourDie extends WOD5eDie {
+    static GAME_SYSTEM = 'changeling'
+
+    static DIE_TYPE = 'advanced'
+
+    /** @override */
+    static DENOMINATION = 'l'
+
+    /** @override */
+    static getResultLabel(result) {
+        return {
+            1: `<img src="${vampireDiceLocation + hungerDiceFaces.bestial}" />`,
+            2: `<img src="${vampireDiceLocation + hungerDiceFaces.failure}" />`,
+            3: `<img src="${vampireDiceLocation + hungerDiceFaces.failure}" />`,
+            4: `<img src="${vampireDiceLocation + hungerDiceFaces.failure}" />`,
+            5: `<img src="${vampireDiceLocation + hungerDiceFaces.failure}" />`,
+            6: `<img src="${vampireDiceLocation + hungerDiceFaces.success}" />`,
+            7: `<img src="${vampireDiceLocation + hungerDiceFaces.success}" />`,
+            8: `<img src="${vampireDiceLocation + hungerDiceFaces.critical}" />`,
+            9: `<img src="${vampireDiceLocation + hungerDiceFaces.critical}" />`,
+            10: `<img src="${vampireDiceLocation + hungerDiceFaces.critical}" />`
+        }[result]
+    }
+}
+

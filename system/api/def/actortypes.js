@@ -12,6 +12,8 @@ import { GhoulActorSheet } from '../../actor/vtm/ghoul-actor-sheet.js'
 import { HunterActorSheet } from '../../actor/htr/hunter-actor-sheet.js'
 // Werewolf system
 import { WerewolfActorSheet } from '../../actor/wta/werewolf-actor-sheet.js'
+// Changeling system
+import { ChangelingActorSheet } from '../../actor/ctd/changeling-actor-sheet.js'
 // Actor models
 import { WoDActorModel } from '../../actor/data-models/base-actor-model.js'
 import { SPCActorModel } from '../../actor/data-models/spc-actor-model.js'
@@ -64,7 +66,14 @@ export class ActorTypes extends BaseDefinitionClass {
     types: ['werewolf'],
     sheetClass: WerewolfActorSheet,
     sheetModel: WoDActorModel
-  }
+    }
+
+    static changeling = {
+        label: 'TYPES.Actor.changeling',
+        types: ['changeling'],
+        sheetClass: ChangelingActorSheet,
+        sheetModel: WoDActorModel
+    }
 
   static group = {
     label: 'WOD5E.GroupSheet',

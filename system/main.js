@@ -31,7 +31,9 @@ import {
   HunterDie,
   HunterDesperationDie,
   WerewolfDie,
-  WerewolfRageDie,
+    WerewolfRageDie,
+    ChangelingDie,
+ChangelingGlamourDie,
   WOD5eDie
 } from './dice/splat-dice.js'
 import { migrateWorld } from './scripts/migration.js'
@@ -103,7 +105,7 @@ Hooks.once('init', async function () {
   CONFIG.Actor.documentClass = WoDActor
   CONFIG.Item.documentClass = WoDItem
   CONFIG.ChatMessage.documentClass = WoDChatMessage
-  CONFIG.ChatMessage.template = 'systems/wod5e/display/ui/chat/chat-message-default.hbs'
+  CONFIG.ChatMessage.template = 'systems/wod5e-ctd/display/ui/chat/chat-message-default.hbs'
   // Custom UI implementations
   CONFIG.ui.chat = WoDChatLog
   CONFIG.ui.settings = WoDSettings
@@ -118,7 +120,9 @@ Hooks.once('init', async function () {
   CONFIG.Dice.terms.h = HunterDie
   CONFIG.Dice.terms.s = HunterDesperationDie
   CONFIG.Dice.terms.w = WerewolfDie
-  CONFIG.Dice.terms.r = WerewolfRageDie
+    CONFIG.Dice.terms.r = WerewolfRageDie
+    CONFIG.Dice.terms.c = ChangelingDie
+    CONFIG.Dice.terms.l = ChangelingGlamourDie
   // Custom enrichers
   CONFIG.TextEditor.enrichers.push(rollPrompt, rollPromptToChat)
 
@@ -133,7 +137,7 @@ Hooks.once('init', async function () {
     })
 
     // Register the sheet with Foundry's DocumentSheetConfig
-    foundry.applications.apps.DocumentSheetConfig.registerSheet(Actor, 'wod5e', sheetClass, {
+    foundry.applications.apps.DocumentSheetConfig.registerSheet(Actor, 'wod5e-ctd', sheetClass, {
       types,
       makeDefault: true
     })
@@ -150,7 +154,7 @@ Hooks.once('init', async function () {
     })
 
     // Register the sheet with Foundry's DocumentSheetConfig
-    foundry.applications.apps.DocumentSheetConfig.registerSheet(Item, 'wod5e', sheetClass, {
+    foundry.applications.apps.DocumentSheetConfig.registerSheet(Item, 'wod5e-ctd', sheetClass, {
       types,
       makeDefault: true
     })
@@ -217,7 +221,7 @@ Hooks.once('ready', async function () {
       const { settingId, cssVariable } = settings[settingKey]
 
       // Get the current value of the setting
-      const settingValue = game.settings.get('wod5e', settingId)
+      const settingValue = game.settings.get('wod5e-ctd', settingId)
 
       // Update the CSS variable
       _updateCSSVariable(settingId, cssVariable, settingValue)

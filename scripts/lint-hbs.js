@@ -69,7 +69,7 @@ export function lintTemplate(source, knownPartials) {
     if (node.type === 'PartialStatement' || node.type === 'PartialBlockStatement') {
       const name = node.name.value ?? node.name.original
 
-      if (name?.startsWith('systems/wod5e/') && !knownPartials.has(name)) {
+      if (name?.startsWith('systems/wod5e-ctd/') && !knownPartials.has(name)) {
         report(node, `Unknown system partial "${name}"`)
       }
     }
@@ -89,7 +89,7 @@ async function main() {
   const files = await findTemplates(path.join(root, 'display'))
   if (!files.length) throw new Error('No Handlebars templates found in display/')
   const knownPartials = new Set(
-    files.map((file) => `systems/wod5e/${path.relative(root, file).split(path.sep).join('/')}`)
+    files.map((file) => `systems/wod5e-ctd/${path.relative(root, file).split(path.sep).join('/')}`)
   )
 
   let errorCount = 0
