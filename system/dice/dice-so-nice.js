@@ -5,8 +5,8 @@
 export const loadDiceSoNice = async function (dice3d) {
   dice3d.addSystem(
     {
-      id: 'wod5e',
-      name: 'wod5e'
+      id: 'wod5e-ctd',
+      name: 'wod5e-ctd'
     },
     true
   )
@@ -38,7 +38,7 @@ export const loadDiceSoNice = async function (dice3d) {
         'systems/wod5e-ctd/assets/icons/dsn/normal-crit-dsn-bump.png'
       ],
       colorset: 'black',
-      system: 'wod5e'
+      system: 'wod5e-ctd'
     },
     'd10'
   )
@@ -71,7 +71,7 @@ export const loadDiceSoNice = async function (dice3d) {
         'systems/wod5e-ctd/assets/icons/dsn/normal-crit-dsn-bump.png'
       ],
       colorset: 'black',
-      system: 'wod5e'
+      system: 'wod5e-ctd'
     },
     'd10'
   )
@@ -125,7 +125,7 @@ export const loadDiceSoNice = async function (dice3d) {
         'systems/wod5e-ctd/assets/icons/dsn/red-crit-dsn-bump.png'
       ],
       colorset: 'hunger',
-      system: 'wod5e'
+      system: 'wod5e-ctd'
     },
     'd10'
   )
@@ -158,7 +158,7 @@ export const loadDiceSoNice = async function (dice3d) {
         'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-crit-dsn.png'
       ],
       colorset: 'hunterdice',
-      system: 'wod5e'
+      system: 'wod5e-ctd'
     },
     'd10'
   )
@@ -235,7 +235,7 @@ export const loadDiceSoNice = async function (dice3d) {
         'systems/wod5e-ctd/assets/icons/dsn/hunter-normal-crit-dsn.png'
       ],
       colorset: 'black',
-      system: 'wod5e'
+      system: 'wod5e-ctd'
     },
     'd10'
   )
@@ -268,7 +268,7 @@ export const loadDiceSoNice = async function (dice3d) {
         'systems/wod5e-ctd/assets/icons/dsn/werewolf-crit-dsn-bump.png'
       ],
       colorset: 'werewolf',
-      system: 'wod5e'
+      system: 'wod5e-ctd'
     },
     'd10'
   )
@@ -301,7 +301,7 @@ export const loadDiceSoNice = async function (dice3d) {
         'systems/wod5e-ctd/assets/icons/dsn/werewolf-crit-dsn-bump.png'
       ],
       colorset: 'rage',
-      system: 'wod5e'
+      system: 'wod5e-ctd'
     },
     'd10'
   )

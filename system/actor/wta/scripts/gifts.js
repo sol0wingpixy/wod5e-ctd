@@ -28,7 +28,7 @@ export const _onAddGift = async function (event) {
     window: {
       title: game.i18n.localize('WOD5E.WTA.AddGift')
     },
-    classes: ['wod5e', 'dialog', 'werewolf', 'dialog'],
+    classes: ['wod5e-ctd', 'dialog', 'werewolf', 'dialog'],
     content,
     ok: {
       callback: (event, button) =>

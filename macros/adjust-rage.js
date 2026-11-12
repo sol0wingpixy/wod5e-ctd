@@ -22,7 +22,7 @@ const rageModifier = await foundry.applications.api.DialogV2.prompt({
   window: {
     title: game.i18n.localize('WOD5E.Compendiums.Macros.AdjustRage')
   },
-  classes: ['wod5e', 'macro', 'dialog', 'werewolf', 'dialog'],
+    classes: ['wod5e-ctd', 'macro', 'dialog', 'werewolf', 'dialog'],
   content,
   ok: {
     callback: (event, button) =>

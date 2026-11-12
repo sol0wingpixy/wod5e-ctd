@@ -2,7 +2,7 @@ export const _onSyncFromDataItem = async function (event) {
   event.preventDefault()
 
   const item = this.item
-  const dataItemId = item.getFlag('wod5e', 'dataItemId')
+  const dataItemId = item.getFlag('wod5e-ctd', 'dataItemId')
 
   // Inform the user if the Data Item ID is empty.
   if (!dataItemId) {
@@ -21,7 +21,7 @@ export const _onSyncFromDataItem = async function (event) {
   }
 
   const worldDataItems = game.items.filter(
-    (item) => item.getFlag('wod5e', 'dataItemId') === dataItemId
+    (item) => item.getFlag('wod5e-ctd', 'dataItemId') === dataItemId
   )
 
   const allDataItems = compendiumDataItems.concat(worldDataItems)
@@ -69,7 +69,7 @@ export const _onSyncToDataItems = async function (event) {
   event.preventDefault()
 
   const item = this.item
-  const dataItemId = item.getFlag('wod5e', 'dataItemId')
+  const dataItemId = item.getFlag('wod5e-ctd', 'dataItemId')
 
   // Inform the user if the Data Item ID is empty.
   if (!dataItemId) {
@@ -110,7 +110,7 @@ export const _onSyncToDataItems = async function (event) {
       window: {
         title: game.i18n.localize('WOD5E.ItemsList.ConfirmOverwrite')
       },
-      classes: ['wod5e', system, 'dialog'],
+      classes: ['wod5e-ctd', system, 'dialog'],
       content,
       modal: true,
       buttons: [

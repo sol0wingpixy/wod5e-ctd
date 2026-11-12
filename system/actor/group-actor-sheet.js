@@ -64,7 +64,7 @@ export class GroupActorSheet extends HandlebarsApplicationMixin(
       icon: 'fa-solid fa-dice-d10',
       resizable: true
     },
-    classes: ['wod5e', 'actor', 'group', 'sheet'],
+      classes: ['wod5e-ctd', 'actor', 'group', 'sheet'],
     position: {
       width: 700,
       height: 600
@@ -236,7 +236,7 @@ export class GroupActorSheet extends HandlebarsApplicationMixin(
 
       features: actorData.features,
 
-      displayBanner: game.settings.get('wod5e', 'actorBanner'),
+        displayBanner: game.settings.get('wod5e-ctd', 'actorBanner'),
 
       headerbg: await getActorHeader(actor),
       actorbg: actor.system?.settings?.background,

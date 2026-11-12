@@ -15,7 +15,7 @@ export const ProseMirrorSettings = async () => {
 
     if (dropdowns.format?.entries) {
       dropdowns.format.entries.push({
-        action: 'wod5e',
+        action: 'wod5e-ctd',
         title: 'World of Darkness',
         children
       })

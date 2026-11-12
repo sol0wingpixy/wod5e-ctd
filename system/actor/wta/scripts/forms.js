@@ -7,7 +7,7 @@ export const _onLostTheWolf = async function (actor) {
   let buttons = {}
 
   // If automatedRage is disabled, we don't want to show this dialogue
-  if (!game.settings.get('wod5e', 'automatedRage')) return
+  if (!game.settings.get('wod5e-ctd', 'automatedRage')) return
 
   // Define the template to be used
   const template = `
@@ -36,7 +36,7 @@ export const _onLostTheWolf = async function (actor) {
     window: { title: game.i18n.localize('WOD5E.WTA.LostTheWolf') },
     content: template,
     buttons,
-    classes: ['wod5e', 'werewolf']
+    classes: ['wod5e-ctd', 'werewolf']
   })
 
   if (result === 'override') {
@@ -89,7 +89,7 @@ export const _onSpcShiftForm = async function () {
     window: { title: game.i18n.localize('WOD5E.WTA.SwapForm') },
     content: template,
     buttons,
-    classes: ['wod5e', 'werewolf']
+    classes: ['wod5e-ctd', 'werewolf']
   })
 
   if (result) {
@@ -137,7 +137,7 @@ export const handleFormChange = async function (event, target, actor, form, dice
   if (actor.system.activeForm === form) return
 
   // If automatedRage is turned on and the actor's rage is 0, present a warning
-  if (game.settings.get('wod5e', 'automatedRage') && actor.system.rage.value === 0) {
+  if (game.settings.get('wod5e-ctd', 'automatedRage') && actor.system.rage.value === 0) {
     _onInsufficientRage(actor, form)
   } else {
     // Variables
@@ -252,7 +252,7 @@ export const _onInsufficientRage = async function (actor, form) {
       icon: 'fas fa-times',
       label: game.i18n.localize('WOD5E.Cancel')
     },
-    classes: ['wod5e', 'werewolf']
+    classes: ['wod5e-ctd', 'werewolf']
   })
 
   if (shouldShift) {

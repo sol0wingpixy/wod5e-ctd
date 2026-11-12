@@ -25,7 +25,7 @@ export const _onAddEdge = async function (event) {
     window: {
       title: game.i18n.localize('WOD5E.HTR.AddEdge')
     },
-    classes: ['wod5e', 'dialog', 'hunter', 'dialog'],
+      classes: ['wod5e-ctd', 'dialog', 'hunter', 'dialog'],
     content,
     ok: {
       callback: (event, button) =>

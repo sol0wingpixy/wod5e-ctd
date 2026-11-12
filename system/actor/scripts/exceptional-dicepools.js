@@ -30,7 +30,7 @@ export const _onEditExceptionalPools = async function (event) {
     window: {
       title: game.i18n.localize('WOD5E.SPC.AddSkill')
     },
-    classes: ['wod5e', actor.system.gamesystem, 'exceptional-edit', 'dialog'],
+      classes: ['wod5e-ctd', actor.system.gamesystem, 'exceptional-edit', 'dialog'],
     content,
     ok: {
       callback: (event, button) => {

@@ -152,7 +152,9 @@ export const _onDotCounterChange = async function (event, target) {
     !parent.has('.hunger-value').length &&
     !parent.has('.member-hunger').length &&
     !parent.has('.rage-value').length &&
-    !parent.has('.member-rage').length
+    !parent.has('.member-rage').length &&
+    !parent.has('.glamour-value').length &&
+    !parent.has('.member-glamour').length
   ) {
     ui.notifications.warn(
       game.i18n.format('WOD5E.Notifications.CannotModifyResourceString', {
@@ -200,7 +202,9 @@ export const _onDotCounterEmpty = async function (event, target) {
     !parent.has('.hunger-value').length &&
     !parent.has('.member-hunger').length &&
     !parent.has('.rage-value').length &&
-    !parent.has('.member-rage').length
+    !parent.has('.member-rage').length &&
+    !parent.has('.glamour-value').length &&
+    !parent.has('.member-glamour').length
   ) {
     ui.notifications.warn(
       game.i18n.format('WOD5E.Notifications.CannotModifyResourceString', {

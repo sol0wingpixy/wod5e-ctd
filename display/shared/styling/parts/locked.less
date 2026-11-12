@@ -13,7 +13,7 @@
 /* Resource counters */
 .locked .resource-plus,
 .locked .resource-minus,
-.locked .resource-value-empty:not(.hunger-value, .rage-value),
+.locked .resource-value-empty:not(.hunger-value, .rage-value, .glamour-value),
 /* SPC Sheet */
 .locked .edit-exceptional-pools,
 .locked .exceptionalskill-delete,
@@ -27,7 +27,7 @@
 /* Slight hack to only show condition suppression
  button when the sheet is unlocked */
 .actor:not(.locked) .condition-suppression {
-  display: none;
+	display: none;
 }
 
 /* Override for owned group mebers and their resource counters */
@@ -38,9 +38,9 @@
 }
 
 /* Set resource counters to use the default cursor */
-.locked .resource-value-empty:not(.hunger-value, .rage-value),
-.locked .resource-value-step:not(.hunger-value, .rage-value),
+.locked .resource-value-empty:not(.hunger-value, .rage-value, .glamour-value),
+.locked .resource-value-step:not(.hunger-value, .rage-value, .glamour-value),
 .locked .resource-plus,
 .locked .resource-minus {
-  cursor: default;
+	cursor: default;
 }

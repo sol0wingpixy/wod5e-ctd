@@ -5,7 +5,7 @@ export class SplatColorsMenu extends FormApplication {
     return foundry.utils.mergeObject(super.defaultOptions, {
       title: game.i18n.localize('WOD5E.Settings.SplatColorsMenu'),
       id: 'wod5e-splat-colors',
-      classes: ['wod5e'],
+      classes: ['wod5e-ctd'],
       template: 'systems/wod5e-ctd/display/ui/splat-colors-menu.hbs',
       width: 500,
       height: 450,
@@ -33,7 +33,7 @@ export class SplatColorsMenu extends FormApplication {
         const { settingId } = settings[settingKey]
 
         // Get the setting and assign it, making it available within the menu
-        data[settingId] = game.settings.get('wod5e', settingId)
+        data[settingId] = game.settings.get('wod5e-ctd', settingId)
       })
     })
 

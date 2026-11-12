@@ -3,7 +3,7 @@ export class AutomationMenu extends FormApplication {
     return foundry.utils.mergeObject(super.defaultOptions, {
       title: game.i18n.localize('WOD5E.Settings.AutomationSettings'),
       id: 'wod5e-automation',
-      classes: ['wod5e'],
+      classes: ['wod5e-ctd'],
       template: 'systems/wod5e-ctd/display/ui/automation-menu.hbs',
       width: 500,
       height: 'auto',
@@ -19,11 +19,11 @@ export class AutomationMenu extends FormApplication {
     const data = await super.getData()
 
     // Encrich editor content
-    data.disableAutomation = game.settings.get('wod5e', 'disableAutomation')
-    data.automatedWillpower = game.settings.get('wod5e', 'automatedWillpower')
-    data.automatedHunger = game.settings.get('wod5e', 'automatedHunger')
-    data.automatedOblivion = game.settings.get('wod5e', 'automatedOblivion')
-    data.automatedRage = game.settings.get('wod5e', 'automatedRage')
+    data.disableAutomation = game.settings.get('wod5e-ctd', 'disableAutomation')
+    data.automatedWillpower = game.settings.get('wod5e-ctd', 'automatedWillpower')
+    data.automatedHunger = game.settings.get('wod5e-ctd', 'automatedHunger')
+    data.automatedOblivion = game.settings.get('wod5e-ctd', 'automatedOblivion')
+    data.automatedRage = game.settings.get('wod5e-ctd', 'automatedRage')
 
     return data
   }
@@ -41,7 +41,7 @@ export class AutomationMenu extends FormApplication {
           const settingId = data.id
           const value = event.target.checked
 
-          game.settings.set('wod5e', settingId, value)
+          game.settings.set('wod5e-ctd', settingId, value)
         }
       })
     })

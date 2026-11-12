@@ -40,7 +40,7 @@ export const _onWillpowerReroll = async (roll) => {
     window: {
       title: game.i18n.localize('WOD5E.Chat.WillpowerReroll')
     },
-    classes: ['wod5e', system, 'dialog'],
+    classes: ['wod5e-ctd', system, 'dialog'],
     content,
     ok: {
       label: 'Reroll',

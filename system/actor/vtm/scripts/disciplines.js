@@ -25,7 +25,7 @@ export const _onAddDiscipline = async function (event) {
     window: {
       title: game.i18n.localize('WOD5E.VTM.AddDiscipline')
     },
-    classes: ['wod5e', 'dialog', 'vampire', 'dialog'],
+    classes: ['wod5e-ctd', 'dialog', 'vampire', 'dialog'],
     content,
     ok: {
       callback: (event, button) =>

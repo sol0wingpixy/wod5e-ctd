@@ -157,7 +157,7 @@ export class wod5eAPI {
           label: game.i18n.localize('WOD5E.Cancel')
         }
       ],
-      classes: ['wod5e', actor.system.gamesystem]
+      classes: ['wod5e-ctd', actor.system.gamesystem]
     })
 
     if (result !== 'cancel') {

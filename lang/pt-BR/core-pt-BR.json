@@ -64,7 +64,7 @@
     "MigrateSystemIdButton": "Migrar Agora",
     "MigrateSystemIdCancel": "A migração do ID do sistema foi recusada por enquanto. Você pode realizar essa migração manualmente indo até a aba ‘Configurações’ na barra lateral.",
     "MigrateSystemIdComplete": "A migração do ID do sistema foi concluída. Você deve reiniciar o mundo e baixar o novo sistema \"World of Darkness 5e\" para carregar este mundo novamente.",
-    "MigrateSystemIdDescription": "World of Darkness 5e está atualizando seu ID de sistema de 'vtm5e' para 'wod5e'. Ao clicar em confirmar, o sistema realizará automaticamente quaisquer migrações necessárias e, em seguida, recarregará o mundo. Se você ainda não fez isso, é altamente recomendável fazer um backup deste mundo e baixar a nova versão do sistema antes de realizar esta migração. Deseja prosseguir?",
+    "MigrateSystemIdDescription": "World of Darkness 5e está atualizando seu ID de sistema de 'vtm5e' para 'wod5e-ctd'. Ao clicar em confirmar, o sistema realizará automaticamente quaisquer migrações necessárias e, em seguida, recarregará o mundo. Se você ainda não fez isso, é altamente recomendável fazer um backup deste mundo e baixar a nova versão do sistema antes de realizar esta migração. Deseja prosseguir?",
     "MigrateSystemIdInProgress": "A migração do ID do sistema está em andamento. Por favor, não desligue seu mundo até que isso seja concluído.",
     "MigrateSystemIdTitle": "Migração do ID do Sistema",
     "Mortal": "Mortal",

@@ -21,7 +21,7 @@ const { HandlebarsApplicationMixin } = foundry.applications.api
  */
 export class VampireActorSheet extends HandlebarsApplicationMixin(WoDActorBase) {
   static DEFAULT_OPTIONS = {
-    classes: ['wod5e', 'actor', 'sheet', 'vampire'],
+    classes: ['wod5e-ctd', 'actor', 'sheet', 'vampire'],
     actions: {
       addDiscipline: _onAddDiscipline,
       removeDiscipline: _onRemoveDiscipline,

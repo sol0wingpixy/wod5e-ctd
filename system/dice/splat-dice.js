@@ -3,11 +3,13 @@ import {
   mortalDiceLocation,
   vampireDiceLocation,
   werewolfDiceLocation,
-  hunterDiceLocation,
+    hunterDiceLocation,
+changelingDiceLocation,
   normalDiceFaces,
   hungerDiceFaces,
   rageDiceFaces,
-  desperationDiceFaces
+    desperationDiceFaces,
+glamourDiceFaces
 } from './icons.js'
 
 export class WOD5eDie extends foundry.dice.terms.Die {
@@ -253,16 +255,16 @@ export class ChangelingDie extends WOD5eDie {
     /** @override */
     static getResultLabel(result) {
         return {
-            1: `<img src="${vampireDiceLocation + normalDiceFaces.failure}" />`,
-            2: `<img src="${vampireDiceLocation + normalDiceFaces.failure}" />`,
-            3: `<img src="${vampireDiceLocation + normalDiceFaces.failure}" />`,
-            4: `<img src="${vampireDiceLocation + normalDiceFaces.failure}" />`,
-            5: `<img src="${vampireDiceLocation + normalDiceFaces.failure}" />`,
-            6: `<img src="${vampireDiceLocation + normalDiceFaces.success}" />`,
-            7: `<img src="${vampireDiceLocation + normalDiceFaces.success}" />`,
-            8: `<img src="${vampireDiceLocation + normalDiceFaces.success}" />`,
-            9: `<img src="${vampireDiceLocation + normalDiceFaces.success}" />`,
-            10: `<img src="${vampireDiceLocation + normalDiceFaces.critical}" />`
+            1: `<img src="${changelingDiceLocation + normalDiceFaces.failure}" />`,
+            2: `<img src="${changelingDiceLocation + normalDiceFaces.failure}" />`,
+            3: `<img src="${changelingDiceLocation + normalDiceFaces.failure}" />`,
+            4: `<img src="${changelingDiceLocation + normalDiceFaces.failure}" />`,
+            5: `<img src="${changelingDiceLocation + normalDiceFaces.failure}" />`,
+            6: `<img src="${changelingDiceLocation + normalDiceFaces.success}" />`,
+            7: `<img src="${changelingDiceLocation + normalDiceFaces.success}" />`,
+            8: `<img src="${changelingDiceLocation + normalDiceFaces.success}" />`,
+            9: `<img src="${changelingDiceLocation + normalDiceFaces.success}" />`,
+            10: `<img src="${changelingDiceLocation + normalDiceFaces.critical}" />`
         }[result]
     }
 }
@@ -282,16 +284,16 @@ export class ChangelingGlamourDie extends WOD5eDie {
     /** @override */
     static getResultLabel(result) {
         return {
-            1: `<img src="${vampireDiceLocation + hungerDiceFaces.bestial}" />`,
-            2: `<img src="${vampireDiceLocation + hungerDiceFaces.failure}" />`,
-            3: `<img src="${vampireDiceLocation + hungerDiceFaces.failure}" />`,
-            4: `<img src="${vampireDiceLocation + hungerDiceFaces.failure}" />`,
-            5: `<img src="${vampireDiceLocation + hungerDiceFaces.failure}" />`,
-            6: `<img src="${vampireDiceLocation + hungerDiceFaces.success}" />`,
-            7: `<img src="${vampireDiceLocation + hungerDiceFaces.success}" />`,
-            8: `<img src="${vampireDiceLocation + hungerDiceFaces.critical}" />`,
-            9: `<img src="${vampireDiceLocation + hungerDiceFaces.critical}" />`,
-            10: `<img src="${vampireDiceLocation + hungerDiceFaces.critical}" />`
+            1: `<img src="${changelingDiceLocation + glamourDiceFaces.dramatic}" />`,
+            2: `<img src="${changelingDiceLocation + glamourDiceFaces.failure}" />`,
+            3: `<img src="${changelingDiceLocation + glamourDiceFaces.failure}" />`,
+            4: `<img src="${changelingDiceLocation + glamourDiceFaces.failure}" />`,
+            5: `<img src="${changelingDiceLocation + glamourDiceFaces.failure}" />`,
+            6: `<img src="${changelingDiceLocation + glamourDiceFaces.success}" />`,
+            7: `<img src="${changelingDiceLocation + glamourDiceFaces.success}" />`,
+            8: `<img src="${changelingDiceLocation + glamourDiceFaces.critical}" />`,
+            9: `<img src="${changelingDiceLocation + glamourDiceFaces.critical}" />`,
+            10: `<img src="${changelingDiceLocation + glamourDiceFaces.critical}" />`
         }[result]
     }
 }

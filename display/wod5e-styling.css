@@ -2393,6 +2393,9 @@ body.uk .actor.sheet {
 .group.sheet .member-rage.active {
   background-color: var(--werewolf-color-2) !important;
 }
+.group.sheet .member-glamour.active {
+	background-color: var(--vampire-color-3) !important;
+}
 
 /* Grids */
 .wod5e .grid,
@@ -2536,7 +2539,7 @@ body.uk .actor.sheet {
 .locked .xp-controls,
 .locked .resource-plus,
 .locked .resource-minus,
-.locked .resource-value-empty:not(.hunger-value, .rage-value),
+.locked .resource-value-empty:not(.hunger-value, .rage-value, .glamour-value),
 .locked .edit-exceptional-pools,
 .locked .exceptionalskill-delete,
 .locked .power-create,
@@ -2555,11 +2558,11 @@ body.uk .actor.sheet {
   cursor: pointer !important;
 }
 /* Set resource counters to use the default cursor */
-.locked .resource-value-empty:not(.hunger-value, .rage-value),
-.locked .resource-value-step:not(.hunger-value, .rage-value),
+.locked .resource-value-empty:not(.hunger-value, .rage-value, glamour-value),
+.locked .resource-value-step:not(.hunger-value, .rage-value, glamour-value),
 .locked .resource-plus,
 .locked .resource-minus {
-  cursor: default;
+	cursor: default;
 }
 
 .powers-display-tree {

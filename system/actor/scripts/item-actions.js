@@ -116,7 +116,7 @@ export const _onCreateItem = async function (event, target) {
       window: {
         title: game.i18n.localize('WOD5E.Add')
       },
-      classes: ['wod5e', system, 'dialog'],
+      classes: ['wod5e-ctd', system, 'dialog'],
       content,
       ok: {
         callback: (event, button) =>
@@ -224,7 +224,7 @@ export const _onItemDelete = async function (event, target) {
     window: {
       title: game.i18n.localize('WOD5E.ConfirmDelete')
     },
-    classes: ['wod5e', system, 'dialog'],
+    classes: ['wod5e-ctd', system, 'dialog'],
     content,
     modal: true,
     buttons: [

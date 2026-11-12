@@ -1,0 +1,14 @@
+<div class='resource flex-group-center glamour'>
+  <div class='resource-content flexrow flex-center flex-between'>
+    <div class='resource-value' data-value='{{ glamour.value }}' data-name='system.hunger.value'>
+      <span class='resource-value-empty glamour-value' data-action='dotCounterEmpty'></span>
+      {{#numLoop glamour.max}}
+        <span
+          class='resource-value-step glamour-value'
+          data-action='dotCounterChange'
+          data-index='{{ this }}'
+        ></span>
+      {{/numLoop}}
+    </div>
+  </div>
+</div>

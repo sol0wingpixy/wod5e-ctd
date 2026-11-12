@@ -19,7 +19,7 @@ const { HandlebarsApplicationMixin } = foundry.applications.api
  */
 export class GiftItemSheet extends HandlebarsApplicationMixin(WoDItemBase) {
   static DEFAULT_OPTIONS = {
-    classes: ['wod5e', 'item', 'sheet'],
+    classes: ['wod5e-ctd', 'item', 'sheet'],
     actions: {}
   }
 

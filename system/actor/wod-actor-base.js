@@ -75,7 +75,7 @@ export class WoDActorBase extends HandlebarsApplicationMixin(
       icon: 'fa-solid fa-dice-d10',
       resizable: true
     },
-    classes: ['wod5e', 'actor', 'sheet'],
+    classes: ['wod5e-ctd', 'actor', 'sheet'],
     position: {
       width: 1000,
       height: 800
@@ -193,7 +193,7 @@ export class WoDActorBase extends HandlebarsApplicationMixin(
 
       features: actorData.features,
 
-      displayBanner: game.settings.get('wod5e', 'actorBanner'),
+      displayBanner: game.settings.get('wod5e-ctd', 'actorBanner'),
 
       headerbg: await getActorHeader(actor),
       actorbg: actor.system?.settings?.background,

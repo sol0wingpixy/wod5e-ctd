@@ -1,9 +1,9 @@
 export const _onRemoveSavedRoll = async function (event, target) {
   // Grab all the variables we need upfront
   const rollToRemove = target.closest('.saved-roll').getAttribute('data-id')
-  const currentActiveRoll = game.users.current.getFlag('wod5e', 'rollMenuActiveRoll')
+  const currentActiveRoll = game.users.current.getFlag('wod5e-ctd', 'rollMenuActiveRoll')
   const savedRolls = foundry.utils.duplicate(
-    game.users.current.getFlag('wod5e', 'rollMenuSavedRolls')
+    game.users.current.getFlag('wod5e-ctd', 'rollMenuSavedRolls')
   )
 
   // Define the content of the Dialog
@@ -18,7 +18,7 @@ export const _onRemoveSavedRoll = async function (event, target) {
     window: {
       title: game.i18n.localize('WOD5E.ConfirmDelete')
     },
-    classes: ['wod5e', 'dialog'],
+    classes: ['wod5e-ctd', 'dialog'],
     content,
     modal: true,
     buttons: [
@@ -43,7 +43,7 @@ export const _onRemoveSavedRoll = async function (event, target) {
       const keys = Object.keys(savedRolls)
       const newActiveRoll = keys.length ? keys[0] : ''
 
-      await game.users.current.setFlag('wod5e', 'rollMenuActiveRoll', newActiveRoll)
+      await game.users.current.setFlag('wod5e-ctd', 'rollMenuActiveRoll', newActiveRoll)
     }
 
     // Update the saved rolls flag

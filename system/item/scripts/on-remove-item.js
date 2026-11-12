@@ -15,7 +15,7 @@ export const _onRemoveItem = async function (event) {
     window: {
       title: game.i18n.localize('WOD5E.ConfirmDelete')
     },
-    classes: ['wod5e', 'dialog'],
+    classes: ['wod5e-ctd', 'dialog'],
     content,
     modal: true,
     buttons: [

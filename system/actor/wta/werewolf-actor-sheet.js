@@ -22,7 +22,7 @@ const { HandlebarsApplicationMixin } = foundry.applications.api
  */
 export class WerewolfActorSheet extends HandlebarsApplicationMixin(WoDActorBase) {
   static DEFAULT_OPTIONS = {
-    classes: ['wod5e', 'actor', 'sheet', 'werewolf'],
+    classes: ['wod5e-ctd', 'actor', 'sheet', 'werewolf'],
     actions: {
       addGift: _onAddGift,
       removeGift: _onRemoveGift,

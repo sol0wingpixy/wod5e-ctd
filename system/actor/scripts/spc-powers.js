@@ -46,7 +46,7 @@ export const _onCreatePower = async function (event, target) {
     window: {
       title: titleLabel
     },
-    classes: ['wod5e', actor.system.gamesystem, 'dialog'],
+    classes: ['wod5e-ctd', actor.system.gamesystem, 'dialog'],
     content,
     ok: {
       callback: (event, button) =>

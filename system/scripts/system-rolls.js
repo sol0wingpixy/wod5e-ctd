@@ -238,7 +238,7 @@ class WOD5eDice {
       if (roll.advancedDice) await handleFailure(system, roll.advancedDice.results)
 
       // Handle willpower damage
-      if (willpowerDamage > 0 && game.settings.get('wod5e', 'automatedWillpower'))
+      if (willpowerDamage > 0 && game.settings.get('wod5e-ctd', 'automatedWillpower'))
         _damageWillpower(null, null, actor, willpowerDamage, rollMode)
 
       // Roll any advanced check dice that need to be rolled in a separate rollmessage
@@ -281,7 +281,7 @@ class WOD5eDice {
       if (originMessage) {
         const chatMessage = game.messages.get(originMessage)
 
-        if (chatMessage && chatMessage.getFlag('wod5e', 'isRollPrompt')) {
+        if (chatMessage && chatMessage.getFlag('wod5e-ctd', 'isRollPrompt')) {
           disableMessageOutput = true
 
           const socketData = {
@@ -445,7 +445,7 @@ class WOD5eDice {
             label: game.i18n.localize('WOD5E.Cancel')
           }
         ],
-        classes: ['wod5e', system, 'roll-dialog'],
+        classes: ['wod5e-ctd', system, 'roll-dialog'],
         render: (_event, dialog) => {
           const dialogHTML = dialog.element
 
@@ -588,20 +588,20 @@ class WOD5eDice {
         if (
           system === 'vampire' &&
           increaseHunger &&
-          game.settings.get('wod5e', 'automatedHunger')
+          game.settings.get('wod5e-ctd', 'automatedHunger')
         ) {
           _increaseHunger(actor, failures, rollMode)
         } else if (
           system === 'werewolf' &&
           decreaseRage &&
-          game.settings.get('wod5e', 'automatedRage')
+          game.settings.get('wod5e-ctd', 'automatedRage')
         ) {
           _decreaseRage(actor, failures, rollMode)
         }
       }
 
       // Handle Oblivion rouse checks here
-      if (selectors.includes('oblivion-rouse') && game.settings.get('wod5e', 'automatedOblivion')) {
+      if (selectors.includes('oblivion-rouse') && game.settings.get('wod5e-ctd', 'automatedOblivion')) {
         const oblivionTriggers = diceResults.filter(
           (result) => [1, 10].includes(result.result) && !result.discarded
         ).length

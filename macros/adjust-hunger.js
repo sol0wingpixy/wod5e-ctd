@@ -22,7 +22,7 @@ const hungerModifier = await foundry.applications.api.DialogV2.prompt({
   window: {
     title: game.i18n.localize('WOD5E.Compendiums.Macros.AdjustHunger')
   },
-  classes: ['wod5e', 'macro', 'dialog', 'vampire', 'dialog'],
+    classes: ['wod5e-ctd', 'macro', 'dialog', 'vampire', 'dialog'],
   content,
   ok: {
     callback: (event, button) =>

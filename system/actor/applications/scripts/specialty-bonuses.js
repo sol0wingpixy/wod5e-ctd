@@ -65,7 +65,7 @@ export const _onAddModifier = async function (event) {
         })
       })
     },
-    classes: ['wod5e', system]
+      classes: ['wod5e-ctd', system]
   })
 
   if (result !== 'cancel') {
@@ -174,7 +174,7 @@ export const _onEditModifier = async function (event, target) {
         })
       })
     },
-    classes: ['wod5e', system]
+      classes: ['wod5e-ctd', system]
   })
 
   if (result !== 'cancel') {

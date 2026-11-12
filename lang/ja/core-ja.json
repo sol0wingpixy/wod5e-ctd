@@ -64,7 +64,7 @@
     "MigrateSystemIdButton": "今すぐ移行",
     "MigrateSystemIdCancel": "システムID移行は延期されました。サイドバーの「設定」タブから手動で移行を実行できます。",
     "MigrateSystemIdComplete": "システムID移行が完了しました。このワールドに再度読み込むには、ワールドを再起動し、新しい「World of Darkness 5e」システムをダウンロードする必要があります。",
-    "MigrateSystemIdDescription": "World of Darkness 5e のシステムIDが 'vtm5e' から 'wod5e' に更新されます。確認をクリックすると、システムは必要な移行を自動的に実行し、ワールドを再読み込みします。まだの場合は、移行を実行する前にこのワールドのバックアップを作成し、新しいバージョンのシステムをダウンロードすることを強くお勧めします。続行しますか？",
+    "MigrateSystemIdDescription": "World of Darkness 5e のシステムIDが 'vtm5e' から 'wod5e-ctd' に更新されます。確認をクリックすると、システムは必要な移行を自動的に実行し、ワールドを再読み込みします。まだの場合は、移行を実行する前にこのワールドのバックアップを作成し、新しいバージョンのシステムをダウンロードすることを強くお勧めします。続行しますか？",
     "MigrateSystemIdInProgress": "システムID移行中です。完了するまでワールドをシャットダウンしないでください。",
     "MigrateSystemIdTitle": "システムID移行",
     "Mortal": "人間",

@@ -12,7 +12,7 @@ export async function RollPromptSockets() {
 
 export async function updateRollPrompt(data) {
   const chatMessage = game.messages.get(data.messageID)
-  const promptedRollsList = chatMessage.getFlag('wod5e', 'promptedRolls')
+  const promptedRollsList = chatMessage.getFlag('wod5e-ctd', 'promptedRolls')
 
   const actorObject = promptedRollsList[data.actorID]
   if (!actorObject) return
@@ -24,7 +24,7 @@ export async function updateRollPrompt(data) {
     }
   })
 
-  await chatMessage.setFlag('wod5e', 'promptedRolls', updatedList)
+  await chatMessage.setFlag('wod5e-ctd', 'promptedRolls', updatedList)
 }
 
 export async function removeActorFromRollPrompt(data) {

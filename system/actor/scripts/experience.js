@@ -41,7 +41,7 @@ export const _onAddExperience = async function (event, target) {
         type: 'button'
       }
     ],
-    classes: ['wod5e', system]
+      classes: ['wod5e-ctd', system]
   })
 
   if (result !== 'cancel') {
@@ -102,7 +102,7 @@ export const _onRemoveExperience = async function (event, target) {
       label: game.i18n.localize('WOD5E.Cancel'),
       default: true
     },
-    classes: ['wod5e', system]
+      classes: ['wod5e-ctd', system]
   })
 
   if (shouldDelete) {
@@ -157,7 +157,7 @@ export const _onEditExperience = async function (event, target) {
         label: game.i18n.localize('WOD5E.Cancel')
       }
     ],
-    classes: ['wod5e', system]
+      classes: ['wod5e-ctd', system]
   })
 
   if (result !== 'cancel') {

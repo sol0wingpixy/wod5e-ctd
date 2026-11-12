@@ -29,7 +29,7 @@ export class WereformApplication extends HandlebarsApplicationMixin(ApplicationV
       title: 'WereForm Editor',
       resizable: true
     },
-    classes: ['wod5e', 'sheet', 'werewolf', 'application', 'wereform'],
+    classes: ['wod5e-ctd', 'sheet', 'werewolf', 'application', 'wereform'],
     position: {
       width: 480,
       height: 400

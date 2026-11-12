@@ -4,6 +4,7 @@ export const mortalDiceLocation = 'systems/wod5e-ctd/assets/icons/dice/mortal/'
 export const vampireDiceLocation = 'systems/wod5e-ctd/assets/icons/dice/vampire/'
 export const werewolfDiceLocation = 'systems/wod5e-ctd/assets/icons/dice/werewolf/'
 export const hunterDiceLocation = 'systems/wod5e-ctd/assets/icons/dice/hunter/'
+export const changelingDiceLocation = 'systems/wod5e-ctd/assets/icons/dice/changeling/'
 
 // Baseline dice variables and icon filenames
 export const normalDiceFaces = {
@@ -31,6 +32,12 @@ export const desperationDiceFaces = {
   critical: 'desperation-critical.png',
   criticalFailure: 'desperation-critical-failure.png'
 }
+export const glamourDiceFaces = {
+    success: 'glamour-success.png',
+    failure: 'glamour-failure.png',
+    critical: 'glamour-critical.png',
+    dramatic: 'dramatic-failure.png'
+}
 
 /**
  * Basic dice
@@ -57,6 +64,11 @@ DiceRegistry.registerBasic('hunter', {
   imgRoot: hunterDiceLocation,
   faces: normalDiceFaces,
   css: 'hunter-dice'
+})
+DiceRegistry.registerBasic('changeling', {
+    imgRoot: changelingDiceLocation,
+    faces: normalDiceFaces,
+    css: 'changeling-dice'
 })
 
 /**
@@ -96,4 +108,15 @@ DiceRegistry.registerAdvanced('hunter', {
     if (num > 1) return 'failure'
     return 'criticalFailure'
   }
+})
+DiceRegistry.registerAdvanced('changeling', {
+    imgRoot: changelingDiceLocation,
+    faces: glamourDiceFaces,
+    css: 'glamour-dice',
+    resultMap: (num) => {
+        if (num > 7) return 'critical'
+        if (num > 5) return 'success'
+        if (num > 1) return 'failure'
+        return 'dramatic'
+    }
 })

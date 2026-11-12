@@ -9,7 +9,7 @@ const { HandlebarsApplicationMixin } = foundry.applications.api
  */
 export class MortalActorSheet extends HandlebarsApplicationMixin(WoDActorBase) {
   static DEFAULT_OPTIONS = {
-    classes: ['wod5e', 'actor', 'sheet', 'mortal'],
+      classes: ['wod5e-ctd', 'actor', 'sheet', 'mortal'],
     actions: {}
   }
 

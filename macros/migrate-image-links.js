@@ -48,14 +48,14 @@ export const MigrateImageLinks = async function () {
 
   // Define the content of the Dialog
   const content = `<p>
-      There are ${total} documents needing to have their image paths updated from 'vtm5e' to 'wod5e'. Do you wish to have these image paths updated?
+      There are ${total} documents needing to have their image paths updated from 'vtm5e' to 'wod5e-ctd'. Do you wish to have these image paths updated?
     </p>`
 
   const updateEntitiesConfirm = await foundry.applications.api.DialogV2.wait({
     window: {
       title: 'Confirm Updating Entities'
     },
-    classes: ['wod5e', 'dialog'],
+      classes: ['wod5e-ctd', 'dialog'],
     content,
     modal: true,
     buttons: [

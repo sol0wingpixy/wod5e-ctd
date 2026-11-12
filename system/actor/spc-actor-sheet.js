@@ -15,7 +15,7 @@ const { HandlebarsApplicationMixin } = foundry.applications.api
  */
 export class SPCActorSheet extends HandlebarsApplicationMixin(WoDActorBase) {
   static DEFAULT_OPTIONS = {
-    classes: ['wod5e', 'actor', 'spc', 'sheet'],
+    classes: ['wod5e-ctd', 'actor', 'spc', 'sheet'],
     actions: {
       createSPCPower: _onCreatePower,
       deleteSPCPower: _onDeletePower,

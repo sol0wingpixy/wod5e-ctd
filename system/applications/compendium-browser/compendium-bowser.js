@@ -18,7 +18,7 @@ export class CompendiumBrowserApplication extends HandlebarsApplicationMixin(App
       title: 'WOD5E.CompendiumBrowser.Label',
       resizable: true
     },
-    classes: ['wod5e', 'dialog-app', 'sheet', 'application', 'compendium-browser'],
+    classes: ['wod5e-ctd', 'dialog-app', 'sheet', 'application', 'compendium-browser'],
     position: {
       width: 900,
       height: 500

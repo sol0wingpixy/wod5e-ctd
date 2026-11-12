@@ -61,6 +61,15 @@ export const preloadHandlebarsTemplates = async function () {
     'systems/wod5e-ctd/display/wta/actors/parts/ban.hbs',
     'systems/wod5e-ctd/display/wta/actors/parts/guiding-spirit.hbs',
 
+    // Changeling Sheet Partials
+    'systems/wod5e-ctd/display/ctd/actors/parts/disciplines.hbs',
+    'systems/wod5e-ctd/display/ctd/actors/parts/blood.hbs',
+    'systems/wod5e-ctd/display/ctd/actors/parts/frenzy.hbs',
+    'systems/wod5e-ctd/display/ctd/actors/parts/humanity.hbs',
+    'systems/wod5e-ctd/display/ctd/actors/parts/glamour.hbs',
+    'systems/wod5e-ctd/display/ctd/actors/parts/rouse.hbs',
+
+
     // SPC Sheet Partials
     'systems/wod5e-ctd/display/shared/actors/parts/spc/stats.hbs',
     'systems/wod5e-ctd/display/shared/actors/parts/spc/spc-traits.hbs',

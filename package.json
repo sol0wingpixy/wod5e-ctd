@@ -1,5 +1,5 @@
 {
-  "name": "wod5e",
+  "name": "wod5e-ctd",
   "version": "1.0.0",
   "description": "ESLint & other utiltiies for developing World of Darkness 5e",
   "scripts": {

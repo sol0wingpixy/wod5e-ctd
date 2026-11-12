@@ -69,7 +69,7 @@ export const _onConfigureSources = async function () {
     window: {
       title: game.i18n.localize('WOD5E.CompendiumBrowser.ConfigureSources')
     },
-    classes: ['wod5e', 'dialog'],
+    classes: ['wod5e-ctd', 'dialog'],
     content,
     ok: {
       callback: (event, button) => {

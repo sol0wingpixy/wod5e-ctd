@@ -80,12 +80,12 @@ export class WoDChatMessage extends ChatMessage {
       ].filterJoin(' '),
 
       // System-specific flags
-      isRollPrompt: this.getFlag('wod5e', 'isRollPrompt'),
-      promptedRolls: this.getFlag('wod5e', 'promptedRolls'),
-      valuePaths: this.getFlag('wod5e', 'valuePaths'),
-      difficulty: this.getFlag('wod5e', 'difficulty'),
+      isRollPrompt: this.getFlag('wod5e-ctd', 'isRollPrompt'),
+        promptedRolls: this.getFlag('wod5e-ctd', 'promptedRolls'),
+        valuePaths: this.getFlag('wod5e-ctd', 'valuePaths'),
+        difficulty: this.getFlag('wod5e-ctd', 'difficulty'),
       isRoll: this?.isRoll || false,
-      isExtendedRoll: this.getFlag('wod5e', 'isExtendedRoll')
+        isExtendedRoll: this.getFlag('wod5e-ctd', 'isExtendedRoll')
     }
 
     // Render additional message data
@@ -113,7 +113,7 @@ export class WoDChatMessage extends ChatMessage {
     Hooks.callAll('renderChatMessageHTML', this, html, this.messageData)
 
     // Get whether descriptions should auto-collapse for this user or not and apply the styling
-    const autoCollapse = game.settings.get('wod5e', 'autoCollapseDescriptions')
+    const autoCollapse = game.settings.get('wod5e-ctd', 'autoCollapseDescriptions')
     if (!autoCollapse) {
       const collapsibleContent = html.querySelector('.collapsible-content')
       if (collapsibleContent) collapsibleContent.style.maxHeight = 'unset'

@@ -19,7 +19,7 @@ const { HandlebarsApplicationMixin } = foundry.applications.api
  */
 export class HunterActorSheet extends HandlebarsApplicationMixin(WoDActorBase) {
   static DEFAULT_OPTIONS = {
-    classes: ['wod5e', 'actor', 'sheet', 'hunter'],
+      classes: ['wod5e-ctd', 'actor', 'sheet', 'hunter'],
     actions: {
       toggleDespair: _onToggleDespair,
       addEdge: _onAddEdge,

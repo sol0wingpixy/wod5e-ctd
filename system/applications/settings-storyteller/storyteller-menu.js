@@ -36,7 +36,7 @@ export class StorytellerMenu extends HandlebarsApplicationMixin(ApplicationV2) {
   static DEFAULT_OPTIONS = {
     tag: 'form',
     id: 'wod5e-storyteller',
-    classes: ['wod5e', 'storyteller-menu'],
+    classes: ['wod5e-ctd', 'storyteller-menu'],
     window: {
       title: 'WOD5E.Settings.StorytellerMenu',
       resizable: true
@@ -84,7 +84,7 @@ export class StorytellerMenu extends HandlebarsApplicationMixin(ApplicationV2) {
       this._draft[type] = {}
       for (const kind of ['modified', 'custom']) {
         this._draft[type][kind] = foundry.utils.deepClone(
-          game.settings.get('wod5e', `${kind}${definition.defCategory}`)
+          game.settings.get('wod5e-ctd', `${kind}${definition.defCategory}`)
         )
       }
     }
@@ -243,7 +243,7 @@ export class StorytellerMenu extends HandlebarsApplicationMixin(ApplicationV2) {
           const entries = snapshot[type][kind]
           if (JSON.stringify(entries) === JSON.stringify(this._baseline[type][kind])) continue
           await game.settings.set(
-            'wod5e',
+            'wod5e-ctd',
             `${kind}${definition.defCategory}`,
             foundry.utils.deepClone(entries)
           )

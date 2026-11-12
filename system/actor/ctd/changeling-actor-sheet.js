@@ -21,7 +21,7 @@ const { HandlebarsApplicationMixin } = foundry.applications.api
  */
 export class ChangelingActorSheet extends HandlebarsApplicationMixin(WoDActorBase) {
   static DEFAULT_OPTIONS = {
-    classes: ['wod5e', 'actor', 'sheet', 'changeling'],
+      classes: ['wod5e-ctd', 'actor', 'sheet', 'changeling'],
     actions: {
       addDiscipline: _onAddDiscipline,
       removeDiscipline: _onRemoveDiscipline,
@@ -36,7 +36,7 @@ export class ChangelingActorSheet extends HandlebarsApplicationMixin(WoDActorBas
 
   static PARTS = {
     header: {
-      template: 'systems/wod5e-ctd/display/vtm/actors/vampire-sheet.hbs'
+      template: 'systems/wod5e-ctd/display/ctd/actors/changeling-sheet.hbs'
     },
     tabs: {
       template: 'systems/wod5e-ctd/display/shared/actors/parts/tab-navigation.hbs'
@@ -48,10 +48,10 @@ export class ChangelingActorSheet extends HandlebarsApplicationMixin(WoDActorBas
       template: 'systems/wod5e-ctd/display/shared/actors/parts/experience.hbs'
     },
     disciplines: {
-      template: 'systems/wod5e-ctd/display/vtm/actors/parts/disciplines.hbs'
+      template: 'systems/wod5e-ctd/display/ctd/actors/parts/disciplines.hbs'
     },
     blood: {
-      template: 'systems/wod5e-ctd/display/vtm/actors/parts/blood.hbs'
+      template: 'systems/wod5e-ctd/display/ctd/actors/parts/blood.hbs'
     },
     features: {
       template: 'systems/wod5e-ctd/display/shared/actors/parts/features.hbs'
@@ -146,6 +146,7 @@ export class ChangelingActorSheet extends HandlebarsApplicationMixin(WoDActorBas
     data.domitor = actorData.headers.domitor
     data.humanity = actorData.humanity
     data.hunger = actorData.hunger
+    data.glamour = actorData.glamour
     data.clan = clanFilter[0]
     data.frenzyActive = actorData.frenzyActive
 
