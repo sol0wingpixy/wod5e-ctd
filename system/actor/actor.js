@@ -5,12 +5,14 @@ import { getDerivedHealth } from './scripts/on-health-change.js'
 import { getDerivedWillpower } from './scripts/on-willpower-change.js'
 import { getDerivedExperience } from './scripts/experience.js'
 import { prepareDisciplines } from './vtm/scripts/prepare-data.js'
+import { prepareArts } from './ctd/scripts/prepare-data.js'
 import { prepareEdges } from './htr/scripts/prepare-data.js'
 import { prepareGifts, prepareFormData } from './wta/scripts/prepare-data.js'
 import { prepareExceptionalDicePools } from './scripts/prepare-exceptional-dice-pools.js'
 import { getVampireModifiers } from './vtm/scripts/vampire-bonuses.js'
 import { getHunterModifiers } from './htr/scripts/hunter-bonuses.js'
 import { Disciplines } from '../api/def/disciplines.js'
+import { Arts } from '../api/def/arts.js'
 import { Skills } from '../api/def/skills.js'
 import { Attributes } from '../api/def/attributes.js'
 import { Renown } from '../api/def/renown.js'
@@ -84,15 +86,14 @@ export class WoDActor extends Actor {
   async prepareDerivedData() {
     const actorData = this
     const systemData = actorData.system
-
     // Defines the mapping of SPC subtypes to gamesystems
     const typeMapping = {
       vampire: 'vampire',
       ghoul: 'vampire',
       hunter: 'hunter',
       werewolf: 'werewolf',
-        spirit: 'werewolf',
-        changeling: 'changeling'
+      spirit: 'werewolf',
+      changeling: 'changeling'
     }
 
     // Set gamesystem of an SPC
@@ -142,7 +143,10 @@ export class WoDActor extends Actor {
       if (systemData.formOverride && systemData.rage.value > 0 && !this.inCompendium) {
         this.update({ 'system.formOverride': false })
       }
-    }
+      }
+    if (systemData?.gamesystem === 'changeling') {
+          systemData.arts = await prepareArts(actorData)
+    } 
 
     // If the actor is a player, update the default permissions to limited
     if (
@@ -243,7 +247,7 @@ async function applyEffectData(actorData) {
   // Ignore suppressed conditions
   const conditions = actorData.items.filter(
     (item) => item.type === 'condition' && !item.system.suppressed
-  )
+    )
   conditions.forEach((condition) => {
     // Iterate through each effect on the condition
     for (const [, effect] of Object.entries(condition.system.effects)) {
@@ -269,7 +273,10 @@ async function applyEffectData(actorData) {
           change.key = Skills.getList({ useValuePath: true })
         } else if (change.key === 'disciplines') {
           // Apply to all disciplines
-          change.key = Disciplines.getList({ useValuePath: true })
+            change.key = Disciplines.getList({ useValuePath: true })
+        } else if (change.key === 'arts') {
+            // Apply to all disciplines
+            change.key = Arts.getList({ useValuePath: true })
         } else if (change.key === 'renown') {
           // Apply to all renown
           change.key = Renown.getList({ useValuePath: true })

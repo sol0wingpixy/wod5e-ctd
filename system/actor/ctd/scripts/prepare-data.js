@@ -1,30 +1,30 @@
-import { Disciplines } from '../../../api/def/disciplines.js'
+import { Arts } from '../../../api/def/arts.js'
 
-export const prepareDisciplines = async function (actor) {
+export const prepareArts = async function (actor) {
   // Secondary variables
-  const disciplinesList = Disciplines.getList({})
-  const actorDisciplines = actor.system?.disciplines
-  const computedDisciplines = {}
+  const artsList = Arts.getList({})
+  const actorArts = actor.system?.arts
+  const computedArts = {}
 
-  for (const [id, value] of Object.entries(disciplinesList)) {
-    let disciplineData = {}
+  for (const [id, value] of Object.entries(artsList)) {
+    let artData = {}
 
     // If the actor has a discipline with the key, grab its current values
-    if (Object.prototype.hasOwnProperty.call(actorDisciplines, id)) {
-      disciplineData = Object.assign(
+    if (Object.prototype.hasOwnProperty.call(actorArts, id)) {
+      artData = Object.assign(
         {
           id,
-          value: actorDisciplines[id].value || 0,
-          powers: actorDisciplines[id].powers || [],
-          description: actorDisciplines[id]?.description || '',
-          visible: actorDisciplines[id].visible,
-          selected: actorDisciplines[id].selected || false
+          value: actorArts[id].value || 0,
+          powers: actorArts[id].powers || [],
+          description: actorArts[id]?.description || '',
+          visible: actorArts[id].visible,
+          selected: actorArts[id].selected || false
         },
         value
       )
     } else {
       // Otherwise, add it to the actor and set it as some default data
-      disciplineData = Object.assign(
+      artData = Object.assign(
         {
           id,
           value: 0,
@@ -37,29 +37,29 @@ export const prepareDisciplines = async function (actor) {
       )
     }
 
-    // Ensure the discipline exists
-    if (!computedDisciplines[id]) computedDisciplines[id] = {}
-    // Apply the discipline's data
-    computedDisciplines[id] = disciplineData
+    // Ensure the art exists
+    if (!computedArts[id]) computedArts[id] = {}
+    // Apply the art's data
+    computedArts[id] = artData
 
     // Make it forced invisible if it's set to hidden
-    if (disciplineData.hidden) {
-      computedDisciplines[id].visible = false
+    if (artData.hidden) {
+      computedArts[id].visible = false
     }
 
-    // Assign all matching powers to the discipline
-    computedDisciplines[id].powers = actor.items.filter(
-      (item) => item.type === 'power' && item.system.discipline === id
+    // Assign all matching powers to the art
+    computedArts[id].powers = actor.items.filter(
+      (item) => item.type === 'power' && item.system.art === id
     )
   }
 
-  return computedDisciplines
+  return computedArts
 }
 
-export const prepareDisciplinePowers = async function (disciplines) {
-  for (const disciplineType in disciplines) {
-    if (Object.prototype.hasOwnProperty.call(disciplines, disciplineType)) {
-      const discipline = disciplines[disciplineType]
+export const prepareArtPowers = async function (arts) {
+  for (const artType in arts) {
+    if (Object.prototype.hasOwnProperty.call(arts, artType)) {
+      const discipline = arts[artType]
 
       if (discipline && Array.isArray(discipline.powers)) {
         // Check if the discipline has powers
@@ -84,11 +84,11 @@ export const prepareDisciplinePowers = async function (disciplines) {
         }
       } else {
         console.warn(
-          `World of Darkness 5e | Discipline ${disciplineType} is missing or powers is not an array.`
+          `World of Darkness 5e | Discipline ${artType} is missing or powers is not an array.`
         )
       }
     }
   }
 
-  return disciplines
+  return arts
 }

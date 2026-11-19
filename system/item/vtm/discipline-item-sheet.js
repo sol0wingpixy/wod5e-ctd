@@ -24,7 +24,7 @@ export class DisciplineItemSheet extends HandlebarsApplicationMixin(WoDItemBase)
 
   static PARTS = {
     header: {
-      template: 'systems/wod5e-ctd/display/vtm/items/discipline-sheet.hbs'
+      template: 'systems/wod5e-ctd/display/z/items/discipline-sheet.hbs'
     },
     tabs: {
       template: 'templates/generic/tab-navigation.hbs'

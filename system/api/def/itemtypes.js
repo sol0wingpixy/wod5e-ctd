@@ -40,6 +40,7 @@ import { BoonItemModel } from '../../item/data-models/vtm/boon-item-model.js'
 import { CreedItemModel } from '../../item/data-models/htr/creed-item-model.js'
 import { DriveItemModel } from '../../item/data-models/htr/drive-item-model.js'
 import { PerkItemModel } from '../../item/data-models/htr/perk-item-model.js'
+import { CantripItemModel } from '../../item/data-models/ctd/cantrip-item-model.js'
 import { EdgePoolItemModel } from '../../item/data-models/htr/edgepool-item-model.js'
 import { TribeItemModel } from '../../item/data-models/wta/tribe-item-model.js'
 import { AuspiceItemModel } from '../../item/data-models/wta/auspice-item-model.js'
@@ -50,8 +51,11 @@ import { Weapons } from './weapons.js'
 import { Disciplines } from './disciplines.js'
 import { Edges } from './edges.js'
 import { Gifts } from './gifts.js'
+import { Arts } from './arts.js'
 import { GuidingSpiritItemModel } from '../../item/data-models/wta/guiding-spirit-item-model.js'
 import { GuidingSpiritItemSheet } from '../../item/wta/guiding-spirit-sheet.js'
+// Changeling System
+import { ArtItemSheet } from '../../item/ctd/art-item-sheet.js'
 
 /*
  *   Each item type is defined through here; this includes the item's label,
@@ -309,7 +313,19 @@ export class ItemTypes extends BaseDefinitionClass {
     limitOnePerActor: true,
     sheetModel: GuidingSpiritItemModel,
     splat: 'werewolf'
-  }
+    }
+    // Changeling Items
+    static cantrip = {
+        label: 'TYPES.Item.cantrip',
+        img: 'systems/wod5e-ctd/assets/icons/items/discipline.png',
+        types: ['cantrip'],
+        sheetClass: ArtItemSheet,
+        restrictedActorTypes: ['changeling'],
+        sheetModel: CantripItemModel,
+        splat: 'changeling',
+        subtypes: Arts,
+        subtypePath: 'art'
+    }
 }
 
 // Hook to call onReady when the game is ready

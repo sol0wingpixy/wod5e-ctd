@@ -3,7 +3,7 @@ import { Disciplines } from '../../../api/def/disciplines.js'
 export const prepareDisciplines = async function (actor) {
   // Secondary variables
   const disciplinesList = Disciplines.getList({})
-  const actorDisciplines = actor.system?.disciplines
+    const actorDisciplines = actor.system?.disciplines
   const computedDisciplines = {}
 
   for (const [id, value] of Object.entries(disciplinesList)) {

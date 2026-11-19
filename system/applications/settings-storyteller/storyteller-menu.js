@@ -3,6 +3,7 @@ import { Skills } from '../../api/def/skills.js'
 import { Disciplines } from '../../api/def/disciplines.js'
 import { Edges } from '../../api/def/edges.js'
 import { Gifts } from '../../api/def/gifts.js'
+import { Arts } from '../../api/def/arts.js'
 
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api
 
@@ -29,6 +30,10 @@ const categories = {
   gift: {
     definition: Gifts,
     label: 'WOD5E.WTA.Gifts'
+    },
+  art: {
+      definition: Arts,
+      label: 'WOD5E.CTD.Arts'
   }
 }
 

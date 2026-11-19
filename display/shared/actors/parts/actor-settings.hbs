@@ -139,5 +139,19 @@
         </div>
       </div>
     {{/ifeq}}
+    {{#ifeq gamesystem 'changeling'}}
+      <div class='form-group setting-row'>
+        <label>{{localize "WOD5E.ActorSettings.ShowArts"}}</label>
+        <div class='form-fields'>
+          <input
+            type='checkbox'
+            name='system.settings.enableArts'
+            {{#if enableArts}}
+              checked
+            {{/if}}
+          />
+        </div>
+      </div>
+{{/ifeq}}
   {{/if}}
 </section>

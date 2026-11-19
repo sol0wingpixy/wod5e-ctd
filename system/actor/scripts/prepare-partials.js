@@ -1,5 +1,6 @@
 import { prepareEdgePowers } from '../htr/scripts/prepare-data.js'
 import { prepareDisciplinePowers } from '../vtm/scripts/prepare-data.js'
+import { prepareArtPowers } from '../ctd/scripts/prepare-data.js'
 import { prepareGiftPowers } from '../wta/scripts/prepare-data.js'
 
 export const prepareStatsContext = async function (context, actor) {
@@ -145,7 +146,8 @@ export const prepareSettingsContext = async function (context, actor) {
   ) {
     context.showOptionalPowers = true
 
-    context.enableDisciplines = actorData.settings.enableDisciplines
+      context.enableDisciplines = actorData.settings.enableDisciplines
+      context.enableArts = actorData.settings.enableArts
     context.enableEdges = actorData.settings.enableEdges
     context.enableGifts = actorData.settings.enableGifts
   }
@@ -219,7 +221,13 @@ export const prepareSpcStatsContext = async function (context, actor) {
     context.showGifts = true
     context.gifts = await prepareGiftPowers(actorData.gifts)
   }
-
+  if (
+    context.currentActorType === 'changeling' ||
+    (context.gamesystem === 'changeling' && context.settings.enableArts === true)
+  ) {
+    context.showArts = true
+    context.arts = await prepareArtPowers(actorData.arts)
+  }
   if (context.currentActorType === 'spirit') {
     context.manifestation = actorData.manifestation
     context.enrichedManifestation =

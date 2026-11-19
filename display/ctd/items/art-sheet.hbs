@@ -22,7 +22,7 @@
       />
     {{/if}}
     <div class='flexrow'>
-      <!-- Input the level of the discipline -->
+      <!-- Input the level of the art -->
       <div class='flexcol level flex-center item-resource'>
         <div>
           <b>{{localize "WOD5E.Level"}}</b>
@@ -35,13 +35,13 @@
         </div>
         <input name='system.cost' type='number' value='{{ cost }}' placeholder='0' />
       </div>
-      <!-- Select the discipline this power belongs to -->
-      <div class='flexcol discipline flex-center item-resource'>
-        <label><b>{{localize "WOD5E.VTM.DisciplineType"}}</b></label>
-        <select name='system.discipline' data-type='String'>
+      <!-- Select the art this cantrip belongs to -->
+      <div class='flexcol art flex-center item-resource'>
+        <label><b>{{localize "WOD5E.VTM.ArtType"}}</b></label>
+        <select name='system.art' data-type='String'>
           {{selectOptions
-            disciplineOptions
-            selected=selectedDiscipline
+            artOptions
+            selected=selectedArt
             localize=true
           }}
         </select>

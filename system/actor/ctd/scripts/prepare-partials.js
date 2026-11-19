@@ -1,16 +1,16 @@
-import { prepareDisciplinePowers } from './prepare-data.js'
+import { prepareArtPowers } from './prepare-data.js'
 import { getBloodPotencyText } from './blood-potency.js'
 
-export const prepareDisciplinesContext = async function (context, actor) {
+export const prepareArtsContext = async function (context, actor) {
   const actorData = actor.system
 
   // Tab data
-  context.tab = context.tabs.disciplines
+  context.tab = context.tabs.arts
 
   // Part-specific data
-  context.disciplines = await prepareDisciplinePowers(actorData.disciplines)
+  context.arts = await prepareArtPowers(actorData.arts)
 
-  // Get discipline data if any discipline is currently selected
+  // Get art data if any discipline is currently selected
   if (actorData?.selectedDiscipline) {
     context.selectedDiscipline = actorData.disciplines[actorData.selectedDiscipline]
     context.enrichedSelectedDisciplineDescription =

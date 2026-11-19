@@ -96,6 +96,7 @@ class WOD5eDice {
    * @param willpowerDamage           (Optional, default 0) How much to damage willpower after the roll is complete
    * @param increaseHunger            (Optional, default false) Whether to increase hunger on failures
    * @param decreaseRage              (Optional, default false) Whether to reduce rage on failures
+   * @param decreaseGlamour           (Optional, default false) Whether to reduce glamour on failures
    * @param difficulty                (Optional, default 0) The number that the roll must succeed to count as a success
    * @param flavor                    (Optional, default '') Text that appears in the description of the roll
    * @param callback                  (Optional) A callable function for determining the chat message flavor given parts and data

@@ -54,7 +54,6 @@ export const _onConfirmRoll = async function (dataset, actor) {
   const macro = dataset.itemId ? data.macroid : dataset.macroid
   const originMessage = dataset.originMessage
   let disableAdvancedDice = dataset.disableAdvancedDice || false
-
   // Add despair to the selectors if the Hunter is in despair
   if (actor.type === 'hunter' && actor.system.despair.value === 1) {
     selectors.push('despair')
@@ -105,7 +104,7 @@ export const _onConfirmRoll = async function (dataset, actor) {
     }
 
     // Retrieve the appropriate amount of advanced dice
-    advancedDice = disableAdvancedDice ? 0 : await WOD5E.api.getAdvancedDice({ actor })
+      advancedDice = disableAdvancedDice ? 0 : await WOD5E.api.getAdvancedDice({ actor })
   }
 
   // Define the actor's gamesystem, defaulting to "mortal" if it's not in the systems list
@@ -114,23 +113,31 @@ export const _onConfirmRoll = async function (dataset, actor) {
   // Some quick modifications to vampire and werewolf rolls
   // in order to properly display the dice in the dialog window
   if (!disableBasicDice) {
-    if (system === 'vampire') {
-      // Ensure that the number of hunger dice doesn't exceed the
-      // total number of dice
-      advancedDice = Math.min(basicDice, advancedDice)
+      if (system === 'vampire') {
+          // Ensure that the number of hunger dice doesn't exceed the
+          // total number of dice
+          advancedDice = Math.min(basicDice, advancedDice)
 
-      // Calculate the number of normal dice to roll by subtracting
-      // the number of hunger dice from them, minimum zero
-      basicDice = Math.max(basicDice - advancedDice, 0)
-    } else if (system === 'werewolf') {
-      // Ensure that the number of rage dice doesn't exceed the
-      // total number of dice
-      advancedDice = Math.min(basicDice, advancedDice)
+          // Calculate the number of normal dice to roll by subtracting
+          // the number of hunger dice from them, minimum zero
+          basicDice = Math.max(basicDice - advancedDice, 0)
+      } else if (system === 'werewolf') {
+          // Ensure that the number of rage dice doesn't exceed the
+          // total number of dice
+          advancedDice = Math.min(basicDice, advancedDice)
 
-      // Calculate the number of normal dice to roll by subtracting
-      // the number of rage dice from them, minimum zero
-      basicDice = Math.max(basicDice - advancedDice, 0)
-    }
+          // Calculate the number of normal dice to roll by subtracting
+          // the number of rage dice from them, minimum zero
+          basicDice = Math.max(basicDice - advancedDice, 0)
+      } else if (system === 'changeling') {
+          // Ensure that the number of rage dice doesn't exceed the
+          // total number of dice
+          advancedDice = Math.min(basicDice, advancedDice)
+
+          // Calculate the number of normal dice to roll by subtracting
+          // the number of rage dice from them, minimum zero
+          basicDice = Math.max(basicDice - advancedDice, 0)
+      }
   }
 
   // Send the roll to the system

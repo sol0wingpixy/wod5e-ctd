@@ -62,7 +62,7 @@ export const preloadHandlebarsTemplates = async function () {
     'systems/wod5e-ctd/display/wta/actors/parts/guiding-spirit.hbs',
 
     // Changeling Sheet Partials
-    'systems/wod5e-ctd/display/ctd/actors/parts/disciplines.hbs',
+    'systems/wod5e-ctd/display/ctd/actors/parts/arts.hbs',
     'systems/wod5e-ctd/display/ctd/actors/parts/blood.hbs',
     'systems/wod5e-ctd/display/ctd/actors/parts/frenzy.hbs',
     'systems/wod5e-ctd/display/ctd/actors/parts/humanity.hbs',

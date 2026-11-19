@@ -1,4 +1,4 @@
-import { prepareDisciplinesContext, prepareBloodContext } from './scripts/prepare-partials.js'
+import { prepareArtsContext, prepareBloodContext } from './scripts/prepare-partials.js'
 // Various button functions
 import {
   _onAddDiscipline,
@@ -47,8 +47,8 @@ export class ChangelingActorSheet extends HandlebarsApplicationMixin(WoDActorBas
     experience: {
       template: 'systems/wod5e-ctd/display/shared/actors/parts/experience.hbs'
     },
-    disciplines: {
-      template: 'systems/wod5e-ctd/display/ctd/actors/parts/disciplines.hbs'
+    arts: {
+      template: 'systems/wod5e-ctd/display/ctd/actors/parts/arts.hbs'
     },
     blood: {
       template: 'systems/wod5e-ctd/display/ctd/actors/parts/blood.hbs'
@@ -89,10 +89,10 @@ export class ChangelingActorSheet extends HandlebarsApplicationMixin(WoDActorBas
       title: 'WOD5E.Tabs.Experience',
       icon: '<i class="fa-solid fa-file-contract"></i>'
     },
-    disciplines: {
-      id: 'disciplines',
+    arts: {
+      id: 'arts',
       group: 'primary',
-      title: 'WOD5E.VTM.Disciplines',
+      title: 'WOD5E.VTM.arts',
       icon: '<span class="wod5e-symbol">b</span>'
     },
     blood: {
@@ -170,9 +170,9 @@ export class ChangelingActorSheet extends HandlebarsApplicationMixin(WoDActorBas
       case 'experience':
         return this.prepareExperienceContext(context, actor)
 
-      // Disciplines
-      case 'disciplines':
-        return prepareDisciplinesContext(context, actor)
+      // Arts
+      case 'arts':
+        return prepareArtsContext(context, actor)
 
       // Disciplines
       case 'blood':

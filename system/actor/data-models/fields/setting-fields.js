@@ -17,7 +17,8 @@ export function settingFields() {
 
       // SPC-specific settings
       enableGifts: new fields.BooleanField({ initial: false }),
-      enableDisciplines: new fields.BooleanField({ initial: false }),
+        enableDisciplines: new fields.BooleanField({ initial: false }),
+        enableArts: new fields.BooleanField({ initial: false }),
       enableEdges: new fields.BooleanField({ initial: false }),
       generalDifficultyEnabled: new fields.BooleanField({ initial: true }),
       genericNotesEnabled: new fields.BooleanField({ initial: true })

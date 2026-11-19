@@ -130,6 +130,7 @@ export class wod5eAPI {
       attributeOptions,
       skillOptions,
       disciplineOptions,
+      artOptions,
       renownOptions,
       hungerValue:
         actor.system.gamesystem === 'vampire' && actor.type !== 'ghoul'
@@ -370,6 +371,11 @@ export class wod5eAPI {
       const rageDice = Math.max(actorData?.rage?.value, 0)
 
       return rageDice
+    } else if (actor.system.gamesystem === 'changeling') {
+        // Define actor's glamour dice, ensuring it can't go below 0
+        const glamourDice = Math.max(actorData?.glamour?.value, 0)
+        console.log("found "+glamourDice+" glamour on actor - wod5e-api.js")
+        return glamourDice
     } else {
       // Hunters will handle their Desperation dice in the roll dialog
       // Mortals and ghouls don't need this

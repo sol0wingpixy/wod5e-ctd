@@ -17,10 +17,10 @@ export function changelingFields() {
       generation: new fields.StringField({ initial: '' })
     }),
 
-    selectedDiscipline: new fields.StringField({ initial: '' }),
-    selectedDisciplinePower: new fields.StringField({ initial: '' }),
+    selectedArt: new fields.StringField({ initial: '' }),
+    selectedArtPower: new fields.StringField({ initial: '' }),
 
-    disciplines: new fields.ObjectField({
+    arts: new fields.ObjectField({
       initial: {},
       validate: false
     })

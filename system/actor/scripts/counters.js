@@ -169,7 +169,7 @@ export const _onDotCounterChange = async function (event, target) {
     return
   }
 
-  // Update the actor field
+    // Update the actor field
   _assignToActorField(fields, index + 1, actor)
 }
 
