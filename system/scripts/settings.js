@@ -8,6 +8,7 @@ import { Skills } from '../api/def/skills.js'
 import { Disciplines } from '../api/def/disciplines.js'
 import { Edges } from '../api/def/edges.js'
 import { Gifts } from '../api/def/gifts.js'
+import { Arts } from '../api/def/arts.js'
 import { cssVariablesRecord } from './update-css-variables.js'
 
 /**
@@ -178,7 +179,11 @@ export const loadSettings = async function () {
     gift: {
       defCategory: 'Gifts',
       defClass: Gifts
-    }
+      },
+    art: {
+          defCategory: 'Arts',
+          defClass: Arts
+      }
   }
 
   for (const [, value] of Object.entries(modCustomList)) {

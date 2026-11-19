@@ -3,6 +3,7 @@ import { ItemTypes } from '../../api/def/itemtypes.js'
 import { Disciplines } from '../../api/def/disciplines.js'
 import { Edges } from '../../api/def/edges.js'
 import { Gifts } from '../../api/def/gifts.js'
+import { Arts } from '../../api/def/arts.js'
 import { Features } from '../../api/def/features.js'
 import { Weapons } from '../../api/def/weapons.js'
 // Localization function
@@ -13,6 +14,7 @@ import { formatDataItemId } from './format-data-item-id.js'
 import { _updateSelectedPerk } from '../htr/scripts/edges.js'
 import { _updateSelectedDisciplinePower } from '../vtm/scripts/disciplines.js'
 import { _updateSelectedGiftPower } from '../wta/scripts/gifts.js'
+import { _updateSelectedArtCantrip } from '../ctd/scripts/arts.js'
 import { CompendiumBrowserApplication } from '../../applications/compendium-browser/compendium-bowser.js'
 
 export const _onCreateItem = async function (event, target) {
@@ -46,7 +48,11 @@ export const _onCreateItem = async function (event, target) {
     case 'gift':
       selectLabel = game.i18n.localize('WOD5E.WTA.SelectGift')
       itemOptions = Gifts.getList({})
-      break
+          break
+      case 'cantrip':
+          selectLabel = game.i18n.localize('WOD5E.CTD.SelectArt')
+          itemOptions = Arts.getList({})
+          break
     case 'feature':
       selectLabel = game.i18n.localize('WOD5E.ItemsList.SelectFeature')
       itemOptions = Features.getList({})
@@ -76,7 +82,10 @@ export const _onCreateItem = async function (event, target) {
         } else {
           itemName = game.i18n.format('WOD5E.WTA.NewStringGift', { string: itemName })
         }
-        break
+            break
+        case 'cantrip':
+            itemName = game.i18n.format('WOD5E.CTD.NewStringCantrip', { string: itemName })
+            break
       case 'edgepool':
         itemName = game.i18n.format('WOD5E.HTR.NewStringEdgePool', { string: itemName })
         break
@@ -150,7 +159,10 @@ export const _onCreateItem = async function (event, target) {
           break
         case 'edgepool':
           itemName = game.i18n.format('WOD5E.HTR.NewStringEdgePool', { string: itemName })
-          break
+              break
+          case 'cantrip':
+              itemName = game.i18n.format('WOD5E.VTM.NewStringCantrip', { string: itemName })
+              break
         case 'feature':
           itemName = game.i18n.format('WOD5E.NewString', { string: itemName })
           break
@@ -276,7 +288,10 @@ async function createItem(actor, itemName, type, itemData) {
       break
     case 'gift':
       _updateSelectedGiftPower(actor, itemId)
-      break
+          break
+      case 'cantrip':
+          _updateSelectedArtCantrip(actor, itemId)
+          break
   }
 }
 
@@ -294,7 +309,10 @@ async function appendSubtypeData(type, subtype, itemData) {
       break
     case 'gift':
       itemData.giftType = subtype
-      break
+          break
+      case 'cantrip':
+          itemData.art = subtype
+          break
     case 'feature':
       itemData.featuretype = subtype
       break

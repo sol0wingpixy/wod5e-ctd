@@ -1,12 +1,12 @@
 import { prepareArtsContext, prepareBloodContext } from './scripts/prepare-partials.js'
 // Various button functions
 import {
-  _onAddDiscipline,
-  _onDisciplineToChat,
-  _onRemoveDiscipline,
-  _onSelectDiscipline,
-  _onSelectDisciplinePower
-} from './scripts/disciplines.js'
+  _onAddArt,
+  _onArtToChat,
+  _onRemoveArt,
+  _onSelectArt,
+  _onSelectArtCantrip
+} from './scripts/arts.js'
 import { _onFrenzyRoll } from './scripts/frenzy-roll.js'
 import { _onEndFrenzy } from './scripts/end-frenzy.js'
 import { _onRemorseRoll } from './scripts/roll-remorse.js'
@@ -23,11 +23,11 @@ export class ChangelingActorSheet extends HandlebarsApplicationMixin(WoDActorBas
   static DEFAULT_OPTIONS = {
       classes: ['wod5e-ctd', 'actor', 'sheet', 'changeling'],
     actions: {
-      addDiscipline: _onAddDiscipline,
-      removeDiscipline: _onRemoveDiscipline,
-      disciplineChat: _onDisciplineToChat,
-      selectDiscipline: _onSelectDiscipline,
-      selectDisciplinePower: _onSelectDisciplinePower,
+      addArt: _onAddArt,
+      removeArt: _onRemoveArt,
+      artChat: _onArtToChat,
+      selectArt: _onSelectArt,
+      selectArtCantrip: _onSelectArtCantrip,
       resistFrenzy: _onFrenzyRoll,
       endFrenzy: _onEndFrenzy,
       remorseRoll: _onRemorseRoll

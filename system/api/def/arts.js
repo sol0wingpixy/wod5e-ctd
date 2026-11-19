@@ -7,7 +7,7 @@ export class Arts extends BaseDefinitionClass {
 
   // Run any necessary compilation on ready
   static onReady() {
-    // Handle adding custom disciplines from the game settings
+      // Handle adding custom disciplines from the game settings
     let customArts = game.settings.get('wod5e-ctd', 'customArts') || {}
 
     // Handle adding custom disciplines from any active modules

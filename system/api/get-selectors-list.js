@@ -169,7 +169,23 @@ export const getSelectorsList = () => {
       id: key,
       displayName: value.displayName
     })
-  }
-
+    }
+// Changeling
+    const arts = WOD5E.Arts.getList({
+        prependType: true
+    })
+    selectorsList.push({
+        id: 'arts',
+        displayName: game.i18n.format('WOD5E.Modifier.AllString', {
+            string: game.i18n.localize('WOD5E.CTD.Arts')
+        })
+    })
+    // Individual disciplines
+    for (const [key, value] of Object.entries(arts)) {
+        selectorsList.push({
+            id: key,
+            displayName: value.displayName
+        })
+    }
   return selectorsList
 }

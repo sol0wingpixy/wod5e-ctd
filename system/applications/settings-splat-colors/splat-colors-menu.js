@@ -70,7 +70,7 @@ export class SplatColorsMenu extends FormApplication {
 
         if (inputId && settingId) {
           const inputElement = document.querySelector(`#${inputId}`)
-          const defaultColor = game.settings.settings.get(`wod5e.${settingId}`).default
+          const defaultColor = game.settings.settings.get(`wod5e-ctd.${settingId}`).default
 
           inputElement.jscolor.fromString(defaultColor)
           _updateCSSVariable(settingId, cssVariable, defaultColor)

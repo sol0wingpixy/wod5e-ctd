@@ -81,10 +81,10 @@ export class StorytellerMenu extends HandlebarsApplicationMixin(ApplicationV2) {
   _draft = null
   _baseline = null
   _saving = false
-
   _initializeDraft() {
     if (this._draft) return
-    this._draft = {}
+      this._draft = {}
+    console.log("updating setting - storyteller-menu.js")
     for (const [type, { definition }] of Object.entries(categories)) {
       this._draft[type] = {}
       for (const kind of ['modified', 'custom']) {

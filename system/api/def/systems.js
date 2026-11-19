@@ -49,7 +49,13 @@ export class Systems extends BaseDefinitionClass {
   static hunter = {
     usesResourceOnAdvancedDice: false,
     label: 'TYPES.Actor.hunter'
-  }
+    }
+    static changeling = {
+        label: 'TYPES.Actor.changeling',
+        usesResourceOnAdvancedDice: true,
+        resourceValuePath: 'glamour.value',
+        resourceUsage: 'subtract'
+    }
 }
 
 // Hook to call onReady when the game is ready

@@ -55,6 +55,7 @@ import { Edges } from './api/def/edges.js'
 import { Renown } from './api/def/renown.js'
 import { WereForms } from './api/def/were-forms.js'
 import { Gifts } from './api/def/gifts.js'
+import { Arts } from './api/def/arts.js'
 import { rollPrompt, rollPromptToChat } from './ui/custom-enrichers/roll-prompt-enrichers.js'
 import { RollMenuApplication } from './applications/roll-menu/roll-prompt-menu.js'
 import { CompendiumBrowserApplication } from './applications/compendium-browser/compendium-bowser.js'
@@ -89,7 +90,8 @@ window.WOD5E = {
   ActorTypes,
   ItemTypes,
   Disciplines,
-  Edges,
+    Edges,
+Arts,
   Renown,
   Gifts,
   WereForms,
